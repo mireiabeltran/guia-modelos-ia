@@ -1,28 +1,51 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GuíaModelosIA · ¿Qué modelo de IA uso?</title><style>
-*{box-sizing:border-box}body{margin:0;background:#f8fafc;color:#1e293b;font:16px/1.6 Inter,Roboto,-apple-system,Segoe UI,Arial,sans-serif}
-header{background:linear-gradient(120deg,#1e3a8a,#2563eb);color:#fff;padding:36px 20px 28px}
-.wrap{max-width:980px;margin:0 auto;padding:0 20px}header .wrap{padding:0}
-h1{margin:0 0 6px;font-size:30px}header p{margin:0;opacity:.9}
-.upd{display:inline-block;margin-top:14px;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:999px;font-size:13px}
-nav{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid #e2e8f0;z-index:5}
-nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:9px 20px;scrollbar-width:none}nav .wrap::-webkit-scrollbar{display:none}
-nav a{white-space:nowrap;padding:5px 12px;border-radius:999px;background:#fff;border:1px solid #e2e8f0;color:#334155;font-size:13.5px;font-weight:600;text-decoration:none;transition:background .15s,color .15s,border-color .15s,box-shadow .15s}
-nav a:hover{background:#eff6ff;border-color:#93c5fd;color:#1d4ed8;box-shadow:0 1px 3px rgba(37,99,235,.15)}
-nav a.active,nav a[aria-current="true"]{background:#2563eb;border-color:#2563eb;color:#fff;box-shadow:0 2px 6px rgba(37,99,235,.3)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#f3f6fb;color:#0f172a;font:16px/1.6 Inter,Roboto,-apple-system,Segoe UI,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+header{position:relative;overflow:hidden;color:#fff;padding:60px 20px 52px;background:radial-gradient(620px 320px at 8% -10%,rgba(56,189,248,.55),transparent 62%),radial-gradient(520px 340px at 92% 10%,rgba(168,85,247,.5),transparent 62%),radial-gradient(760px 420px at 55% 135%,rgba(59,130,246,.75),transparent 62%),linear-gradient(135deg,#0a1a4f 0%,#1e3a8a 48%,#312e81 100%)}
+header:before{content:"";position:absolute;width:440px;height:440px;right:-130px;top:-190px;border-radius:50%;border:1px solid rgba(255,255,255,.2);box-shadow:0 0 0 46px rgba(255,255,255,.045),0 0 0 100px rgba(255,255,255,.03);pointer-events:none}
+header:after{content:"";position:absolute;left:0;bottom:0;width:340px;height:170px;background-image:radial-gradient(rgba(255,255,255,.28) 1px,transparent 1.4px);background-size:18px 18px;-webkit-mask-image:linear-gradient(45deg,#000,transparent 70%);mask-image:linear-gradient(45deg,#000,transparent 70%);pointer-events:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}header .wrap{position:relative;z-index:1;padding:0}
+h1{margin:0 0 10px;font-size:46px;line-height:1.06;letter-spacing:-.03em;font-weight:800;max-width:760px}
+header p{margin:0;font-size:18.5px;opacity:.86;max-width:620px}
+.upd{display:inline-flex;align-items:center;gap:9px;margin-top:22px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);padding:6px 15px 6px 12px;border-radius:999px;font-size:13px;font-weight:500;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);box-shadow:0 6px 20px -10px rgba(0,0,0,.4)}
+.upd:before{content:"";width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 3px rgba(74,222,128,.28);flex:none}
+nav{position:sticky;top:0;background:rgba(243,246,251,.8);-webkit-backdrop-filter:saturate(180%) blur(12px);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid rgba(203,213,225,.6);z-index:5}
+nav .wrap{display:flex;gap:7px;overflow-x:auto;padding:11px 20px;scrollbar-width:none}nav .wrap::-webkit-scrollbar{display:none}
+nav a{white-space:nowrap;padding:6px 14px;border-radius:999px;background:#fff;border:1px solid #e2e8f0;color:#334155;font-size:13.5px;font-weight:600;text-decoration:none;box-shadow:0 1px 2px rgba(15,23,42,.05);transition:background .18s,color .18s,border-color .18s,box-shadow .18s,transform .18s}
+nav a:hover{background:#eef4ff;border-color:#a5c3fb;color:#1d4ed8;transform:translateY(-1px);box-shadow:0 6px 14px -8px rgba(37,99,235,.55)}
+nav a.active,nav a[aria-current="true"]{background:linear-gradient(135deg,#2563eb,#4f46e5);border-color:transparent;color:#fff;box-shadow:0 6px 16px -6px rgba(79,70,229,.6)}
 nav a:focus-visible{outline:2px solid #2563eb;outline-offset:2px}
-section{background:#fff;border:1px solid #e2e8f0;border-radius:14px;margin:22px 0;padding:22px 24px}
-h2{margin:0 0 10px;font-size:22px}.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #eef2f7;border-radius:10px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:6px 0 4px}
-.card{border:1px solid #e2e8f0;border-radius:12px;padding:14px 16px;background:#fbfdff}.card b{display:block;font-size:17px;color:#1e3a8a}
-.card span{font-size:13px;color:#64748b}.legend{font-size:12.5px;color:#64748b}.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 4px 0 12px}
+main.wrap{padding-top:6px;padding-bottom:48px}
+section{position:relative;background:#fff;border:1px solid rgba(226,232,240,.95);border-radius:20px;margin:26px 0;padding:30px 32px;box-shadow:0 1px 2px rgba(15,23,42,.04),0 10px 30px -16px rgba(15,23,42,.14);scroll-margin-top:76px}
+h2{display:flex;align-items:center;gap:12px;margin:0 0 14px;font-size:24px;line-height:1.25;letter-spacing:-.02em;font-weight:800;color:#0f172a}
+h2:before{content:"";flex:none;width:6px;height:24px;border-radius:4px;background:linear-gradient(180deg,#38bdf8,#4f46e5)}
+section h3{letter-spacing:-.01em;color:#1e293b}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #e6ebf3;border-radius:14px;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+section>svg{display:block;margin-top:10px;background:linear-gradient(180deg,#fcfdff,#f8fafd);border:1px solid #edf1f7;border-radius:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:8px 0 4px}
+.card{--c:#2563eb;--bg:#eff6ff;display:flex;flex-direction:column;position:relative;overflow:hidden;border:1px solid #e6ebf3;border-radius:18px;padding:20px 18px 18px;background:linear-gradient(180deg,#fff 0%,#fbfcfe 100%);box-shadow:0 1px 2px rgba(15,23,42,.04),0 8px 20px -14px rgba(15,23,42,.2);transition:transform .2s ease,box-shadow .2s ease}
+.card:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--c),color-mix(in srgb,var(--c) 45%,#fff))}
+.card:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgba(15,23,42,.05),0 18px 34px -16px rgba(15,23,42,.28)}
+.card:nth-child(2){--c:#0d9488;--bg:#e6f7f5}.card:nth-child(3){--c:#d97706;--bg:#fef3e2}.card:nth-child(4){--c:#7c3aed;--bg:#f3edff}
+.card .ic{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:12px;background:var(--bg);color:var(--c);margin-bottom:12px}
+.card span{display:block;font-size:13px;color:#64748b;font-variant-numeric:tabular-nums}
+.card span:last-child{margin-top:auto}.card span:first-of-type{margin-top:0;font-size:11px;font-weight:700;letter-spacing:.035em;text-transform:uppercase;color:var(--c)}
+.card b{display:block;margin:4px 0 6px;font-size:20px;line-height:1.2;letter-spacing:-.015em;font-weight:800;color:#0f172a}
+.legend{font-size:13px;color:#64748b}.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 4px 0 12px}
 .foot{font-size:13px;color:#64748b}.foot a{color:#2563eb;word-break:break-all}
 ul.cl li{margin-bottom:6px}.cl-date{font-weight:700;color:#1e3a8a}
-details{margin-top:10px}summary{cursor:pointer;color:#2563eb}
-.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.tool{border:1px solid #e2e8f0;border-radius:12px;padding:14px 16px;background:#fbfdff}
+details{margin-top:14px}summary{cursor:pointer;color:#2563eb;font-size:14px;font-weight:600;list-style-position:inside}summary:hover{color:#1d4ed8;text-decoration:underline;text-underline-offset:3px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.tool{border:1px solid #e2e8f0;border-radius:16px;padding:14px 16px;background:#fbfdff}
 .tool h3{margin:0 0 2px;font-size:16px;color:#1e3a8a}.tool p.para{margin:0 0 6px;font-size:13px;color:#64748b}.tool ul{margin:0;padding-left:18px;font-size:14px}.tool li{margin-bottom:5px}
-.note{background:#fff7e0;border-left:4px solid #f5b301;padding:8px 12px;border-radius:6px;font-size:14px}
-@media(max-width:640px){h1{font-size:24px}section{padding:16px}.tbl{font-size:12.5px}.tbl td,.tbl th{padding:7px 8px}.tag{display:none}}
+.note{background:linear-gradient(90deg,#fff7e0,#fffbf0);border:1px solid #fde9a8;border-left:4px solid #f5b301;padding:10px 14px;border-radius:12px;font-size:14px}
+section ul li::marker{color:#4f46e5}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media(max-width:640px){header{padding:40px 18px 36px}h1{font-size:31px}header p{font-size:16px}.upd{font-size:11.5px;padding:5px 12px 5px 10px;border-radius:14px;letter-spacing:-.005em}header:before{width:300px;height:300px;right:-140px;top:-150px}
+section{padding:20px 16px;border-radius:16px;margin:18px 0}h2{font-size:20px;gap:10px}h2:before{height:20px;width:5px}.wrap{padding:0 14px}nav .wrap{padding:10px 14px}
+.cards{grid-template-columns:1fr 1fr;gap:10px}.card{padding:16px 14px 14px;border-radius:16px}.card b{font-size:16.5px}.card .ic{width:32px;height:32px;border-radius:10px;margin-bottom:8px}.card span:first-of-type{font-size:10.5px}
+.tbl{font-size:12.5px}.tbl td,.tbl th{padding:7px 8px}.tag{display:none}}
+@media(max-width:380px){.cards{grid-template-columns:1fr}}
 
 .tbl{width:100%;border-collapse:collapse;font-size:14px;font-family:Inter,Roboto,Arial,sans-serif;color:#334155}
 .tbl th{background:#f1f5f9;color:#64748b;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;text-align:left;padding:10px 12px;white-space:nowrap}
@@ -39,27 +62,46 @@ details{margin-top:10px}summary{cursor:pointer;color:#2563eb}
 .flat{color:#64748b;text-decoration:underline;font-weight:600}.flat small{display:block;font-size:9px;color:#94a3b8;text-decoration:none;font-weight:400}
 .harness{color:#94a3b8;font-size:11.5px;margin-left:6px}
 
+.scroll .tbl{font-variant-numeric:tabular-nums}
+.scroll .tbl th{background:linear-gradient(180deg,#f8fafc,#eef2f7);border-bottom:1px solid #e2e8f0;padding-top:11px;padding-bottom:11px}
+.scroll .tbl td{transition:background .15s}
+.scroll .tbl tbody tr:nth-child(even) td{background:#fafbfd}
+.scroll .tbl tbody tr:hover td{background:#eff5ff}
+.scroll .tbl tbody tr.ref td{background:#fff7e0}.scroll .tbl tbody tr.ref:hover td{background:#fff0c2}
+.scroll .tbl tbody tr:last-child td{border-bottom:0}
+.scroll .tag{border-radius:999px;padding:3px 10px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.04)}
+.scroll .num{border-radius:999px;min-width:24px}
+
 .tl{list-style:none;margin:14px 0 4px;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:10px;position:relative}
 .tl:before{content:"";position:absolute;left:0;right:0;top:41px;height:2px;background:linear-gradient(90deg,#bfdbfe,#2563eb)}
 .tl li{position:relative;text-align:center;min-width:0}
 .tl-date{display:block;height:30px;line-height:1.15;font-size:12px;color:#64748b;white-space:nowrap}.tl-date b{display:block;font-size:15px;color:#1e3a8a}
-.tl-pin{display:block;width:14px;height:14px;margin:4px auto 12px;border-radius:50%;background:#fff;border:3px solid #2563eb;position:relative;z-index:1}
-.tl-m{display:block;border:1px solid #e2e8f0;border-radius:10px;background:#fbfdff;padding:7px 8px;margin:0 0 6px;font-size:13px;font-weight:700;color:#1e293b;line-height:1.3}
+.tl-pin{display:block;width:14px;height:14px;margin:4px auto 12px;border-radius:50%;background:#fff;border:3px solid #2563eb;position:relative;z-index:1;box-shadow:0 0 0 4px #fff,0 0 0 5px #dbeafe}
+.tl-m{display:block;border:1px solid #e6ebf3;border-radius:12px;background:#fff;padding:8px 8px;margin:0 0 7px;font-size:13px;font-weight:700;color:#1e293b;line-height:1.3;box-shadow:0 1px 2px rgba(15,23,42,.04),0 4px 12px -8px rgba(15,23,42,.18);transition:transform .2s,box-shadow .2s}.tl-m:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(15,23,42,.05),0 12px 22px -12px rgba(15,23,42,.3)}
 .tl-m small{display:block;font-size:11.5px;font-weight:500;color:#64748b;margin-top:2px}
-.tl-m.star{background:#fff7e0;border-color:#f5b301}.tl-key{display:inline-block;width:10px;height:10px;border-radius:3px;background:#fff7e0;border:1px solid #f5b301;margin:0 4px 0 2px;vertical-align:-1px}
+.tl-m.star{background:linear-gradient(180deg,#fffaeb,#fff3d1);border-color:#f5c542}.tl-key{display:inline-block;width:10px;height:10px;border-radius:3px;background:#fff7e0;border:1px solid #f5b301;margin:0 4px 0 2px;vertical-align:-1px}
 @media(max-width:640px){.tl{grid-auto-flow:row;grid-auto-columns:auto;gap:0;padding-left:26px}.tl:before{left:7px;right:auto;top:6px;bottom:6px;width:2px;height:auto;background:linear-gradient(180deg,#bfdbfe,#2563eb)}
 .tl li{text-align:left;padding-bottom:12px}.tl li:last-child{padding-bottom:0}.tl-pin{position:absolute;left:-26px;top:3px;margin:0}.tl-date{height:auto;margin-bottom:5px}.tl-date b{display:inline;margin-right:4px}}
 </style></head><body>
 <header><div class="wrap"><h1>GuíaModelosIA: qué modelo de IA usar</h1>
 <p>El modelo más barato para cada nivel de inteligencia.</p>
 <span class="upd">Última actualización: 8 de octubre de 2026 · Octubre 2026</span></div></header>
-<nav><div class="wrap"><a href="#resumen">Resumen</a><a href="#general">Uso general</a><a href="#coding">Programación</a><a href="#grafico">Gráfico</a><a href="#legal">Legal</a><a href="#timeline">Línea temporal</a><a href="#imagen-video">Imagen y vídeo</a></div></nav>
+<nav><div class="wrap"><a href="#timeline">Línea temporal</a><a href="#resumen">Resumen</a><a href="#general">Uso general</a><a href="#coding">Programación</a><a href="#grafico">Gráfico</a><a href="#legal">Legal</a><a href="#imagen-video">Imagen y vídeo</a></div></nav>
 <main class="wrap">
+<section id="timeline"><h2>Línea temporal de lanzamientos</h2><p class="legend">Fecha de salida de cada modelo de la guía. <span class="tl-key"></span>recomendado en el resumen.</p>
+<ol class="tl">
+<li><span class="tl-date"><b>3 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#2563eb"></span>GPT-6 Astra<small>OpenAI</small></span></li>
+<li><span class="tl-date"><b>21 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#111827"></span>Grok 4.7<small>xAI</small></span></li>
+<li><span class="tl-date"><b>22 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m star"><span class="dot" style="background:#8b5cf6"></span>Claude Opus 5.5<small>Anthropic</small></span><span class="tl-m star"><span class="dot" style="background:#2563eb"></span>GPT-6 Luna<small>OpenAI</small></span></li>
+<li><span class="tl-date"><b>28 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#8b5cf6"></span>Claude Sonnet 5.5<small>Anthropic</small></span></li>
+<li><span class="tl-date"><b>29 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m star"><span class="dot" style="background:#2563eb"></span>GPT-6.1 Sol<small>OpenAI</small></span></li>
+<li><span class="tl-date"><b>7 oct</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#8b5cf6"></span>Claude Haiku 5.5<small>Anthropic</small></span></li>
+</ol></section>
 <section id="resumen"><h2>Resumen</h2><div class="cards">
-<div class="card"><span>Uso general · referencia</span><b>GPT-6.1 Sol (medium)</b><span>Índice 48 · $0.21/tarea</span></div>
-<div class="card"><span>Programación · referencia</span><b>GPT-6.1 Sol (medium)</b><span>Índice 48,0 · $0.61/tarea</span></div>
-<div class="card"><span>Volumen / automatizaciones</span><b>GPT-6 Luna (max)</b><span>Índice 38 · $0.07/tarea</span></div>
-<div class="card"><span>Máxima inteligencia</span><b>Claude Opus 5.5 (max)</b><span>Índice 58 · $5.98/tarea</span></div></div>
+<div class="card"><i class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg></i><span>Uso general · referencia</span><b>GPT-6.1 Sol (medium)</b><span>Índice 48 · $0.21/tarea</span></div>
+<div class="card"><i class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></i><span>Programación · referencia</span><b>GPT-6.1 Sol (medium)</b><span>Índice 48,0 · $0.61/tarea</span></div>
+<div class="card"><i class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></i><span>Volumen / automatizaciones</span><b>GPT-6 Luna (max)</b><span>Índice 38 · $0.07/tarea</span></div>
+<div class="card"><i class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"/></svg></i><span>Máxima inteligencia</span><b>Claude Opus 5.5 (max)</b><span>Índice 58 · $5.98/tarea</span></div></div>
 </section>
 <section id="general"><h2>Recomendación para uso general</h2><p>Ranking de inteligencia general, de menor a mayor capacidad (Artificial Analysis Intelligence Index):</p>
 <div class="scroll"><table class="tbl"><thead><tr><th>#</th><th>Modelo</th><th>Proveedor</th><th class="r">Índice</th><th class="r">Coste / tarea</th></tr></thead><tbody>
@@ -451,14 +493,5 @@ details{margin-top:10px}summary{cursor:pointer;color:#2563eb}
 <text x="537.3" y="53.8" font-size="9.5" fill="#334155" text-anchor="end">Grok 4.7 (xhigh)</text>
 </svg>
 </section>
-<section id="timeline"><h2>Línea temporal de lanzamientos</h2><p class="legend">Fecha de salida de cada modelo de la guía. <span class="tl-key"></span>recomendado en el resumen.</p>
-<ol class="tl">
-<li><span class="tl-date"><b>3 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#2563eb"></span>GPT-6 Astra<small>OpenAI</small></span></li>
-<li><span class="tl-date"><b>21 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#111827"></span>Grok 4.7<small>xAI</small></span></li>
-<li><span class="tl-date"><b>22 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m star"><span class="dot" style="background:#8b5cf6"></span>Claude Opus 5.5<small>Anthropic</small></span><span class="tl-m star"><span class="dot" style="background:#2563eb"></span>GPT-6 Luna<small>OpenAI</small></span></li>
-<li><span class="tl-date"><b>28 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#8b5cf6"></span>Claude Sonnet 5.5<small>Anthropic</small></span></li>
-<li><span class="tl-date"><b>29 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m star"><span class="dot" style="background:#2563eb"></span>GPT-6.1 Sol<small>OpenAI</small></span></li>
-<li><span class="tl-date"><b>7 oct</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#8b5cf6"></span>Claude Haiku 5.5<small>Anthropic</small></span></li>
-</ol></section>
 <section id="imagen-video"><h2>Imagen y vídeo</h2><p>Para imagen y vídeo, con las cuentas que ya tenemos:</p><ul><li>ChatGPT Business: Images 2.5 (ChatGPT Images) para generar y retocar imágenes.</li><li>Claude Team: Claude Design para prototipos, mockups y presentaciones; Sonnet 5.5 puede escribir el código de una animación y renderizarla a vídeo (p. ej. con HyperFrames en Claude Code).</li><li>GitHub Copilot entiende imágenes (capturas, mockups, PDF) pero no genera imagen ni vídeo.</li></ul><p class="foot">Los datos de la empresa, solo en las cuentas corporativas.</p></section>
 </main><script>(function(){var l=[].slice.call(document.querySelectorAll("nav a[href^='#']"));function u(){var y=window.scrollY+90,c=l[0];l.forEach(function(a){var s=document.querySelector(a.getAttribute("href"));if(s&&s.offsetTop<=y)c=a;});if(window.innerHeight+window.scrollY>=document.body.scrollHeight-2)c=l[l.length-1];l.forEach(function(a){var on=a===c;a.classList.toggle("active",on);if(on)a.setAttribute("aria-current","true");else a.removeAttribute("aria-current");});}window.addEventListener("scroll",u,{passive:true});window.addEventListener("hashchange",u);u();})();</script></body></html>
