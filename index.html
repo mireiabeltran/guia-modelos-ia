@@ -1,0 +1,443 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GuíaModelosIA · ¿Qué modelo de IA uso?</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f8fafc;color:#1e293b;font:16px/1.6 Inter,Roboto,-apple-system,Segoe UI,Arial,sans-serif}
+header{background:linear-gradient(120deg,#1e3a8a,#2563eb);color:#fff;padding:36px 20px 28px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}header .wrap{padding:0}
+h1{margin:0 0 6px;font-size:30px}header p{margin:0;opacity:.9}
+.upd{display:inline-block;margin-top:14px;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:999px;font-size:13px}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e2e8f0;z-index:5}
+nav .wrap{display:flex;gap:18px;overflow-x:auto;padding:10px 20px;font-size:14px}nav a{color:#2563eb;text-decoration:none;white-space:nowrap}
+section{background:#fff;border:1px solid #e2e8f0;border-radius:14px;margin:22px 0;padding:22px 24px}
+h2{margin:0 0 10px;font-size:22px}.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #eef2f7;border-radius:10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:6px 0 4px}
+.card{border:1px solid #e2e8f0;border-radius:12px;padding:14px 16px;background:#fbfdff}.card b{display:block;font-size:17px;color:#1e3a8a}
+.card span{font-size:13px;color:#64748b}.legend{font-size:12.5px;color:#64748b}.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 4px 0 12px}
+.foot{font-size:13px;color:#64748b}.foot a{color:#2563eb;word-break:break-all}
+ul.cl li{margin-bottom:6px}.cl-date{font-weight:700;color:#1e3a8a}
+details{margin-top:10px}summary{cursor:pointer;color:#2563eb}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.tool{border:1px solid #e2e8f0;border-radius:12px;padding:14px 16px;background:#fbfdff}
+.tool h3{margin:0 0 2px;font-size:16px;color:#1e3a8a}.tool p.para{margin:0 0 6px;font-size:13px;color:#64748b}.tool ul{margin:0;padding-left:18px;font-size:14px}.tool li{margin-bottom:5px}
+.note{background:#fff7e0;border-left:4px solid #f5b301;padding:8px 12px;border-radius:6px;font-size:14px}
+@media(max-width:640px){h1{font-size:24px}section{padding:16px}.tbl{font-size:12.5px}.tbl td,.tbl th{padding:7px 8px}.tag{display:none}}
+
+.tbl{width:100%;border-collapse:collapse;font-size:14px;font-family:Inter,Roboto,Arial,sans-serif;color:#334155}
+.tbl th{background:#f1f5f9;color:#64748b;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;text-align:left;padding:10px 12px;white-space:nowrap}
+.tbl th.r,.tbl td.r{text-align:right}
+.tbl th small{display:block;font-size:9px;font-weight:600;color:#94a3b8;letter-spacing:.05em}
+.tbl td{padding:9px 12px;border-bottom:1px solid #eef2f7;vertical-align:middle}
+.tbl tr.ref td{background:#fff7e0;font-weight:700;color:#1e293b}
+.tbl tr.ref td:first-child{box-shadow:inset 4px 0 0 #f5b301}
+.num{display:inline-block;min-width:22px;padding:1px 6px;border-radius:6px;background:#e0ecff;color:#2563eb;font-weight:700;font-size:12px;text-align:center}
+.tag{display:inline-block;margin-left:10px;padding:2px 9px;border-radius:5px;font-size:9.5px;font-weight:800;letter-spacing:.06em;background:#fde68a;color:#7c5a00;vertical-align:middle;white-space:nowrap}
+.tag.alt{background:#a7f3d0;color:#065f46}.tag.warn{background:#fecaca;color:#7f1d1d}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:middle}
+.cost{color:#2563eb;font-weight:700}.lc{color:#16a34a;font-weight:600}.lc.hi{color:#dc2626;font-weight:700}
+.flat{color:#64748b;text-decoration:underline;font-weight:600}.flat small{display:block;font-size:9px;color:#94a3b8;text-decoration:none;font-weight:400}
+.harness{color:#94a3b8;font-size:11.5px;margin-left:6px}
+</style></head><body>
+<header><div class="wrap"><h1>GuíaModelosIA: qué modelo de IA usar</h1>
+<p>El modelo más barato para cada nivel de inteligencia. Departamento de Datos · Redarbor.</p>
+<span class="upd">Última actualización: 8 de octubre de 2026 · Octubre 2026</span></div></header>
+<nav><div class="wrap"><a href="#resumen">Resumen</a><a href="#general">Uso general</a><a href="#coding">Programación</a><a href="#grafico">Gráfico</a><a href="#legal">Legal</a><a href="#imagen-video">Imagen y vídeo</a><a href="#cambios">Cambios</a><a href="#fuentes">Fuentes</a></div></nav>
+<main class="wrap">
+<section id="resumen"><h2>Resumen</h2><div class="cards">
+<div class="card"><span>Uso general · referencia</span><b>GPT-6.1 Sol (medium)</b><span>Índice 48 · $0.21/tarea</span></div>
+<div class="card"><span>Programación · referencia</span><b>GPT-6.1 Sol (medium)</b><span>Índice 48,0 · $0.61/tarea</span></div>
+<div class="card"><span>Volumen / automatizaciones</span><b>GPT-6 Luna (max)</b><span>Índice 38 · $0.07/tarea</span></div></div>
+<p>Dos trampas habituales: pensar que una tarea compleja necesita el modelo más caro, o que el modelo «intermedio» de cada proveedor es el más equilibrado. Solo listamos modelos en la <b>frontera eficiente</b>: si echáis en falta alguno, es porque otro de la lista iguala o supera su inteligencia a menor precio.</p></section>
+<section id="general"><h2>Recomendación para uso general</h2><p>Ranking de inteligencia general, de menor a mayor capacidad (Artificial Analysis Intelligence Index):</p>
+<div class="scroll"><table class="tbl"><thead><tr><th>#</th><th>Modelo</th><th>Proveedor</th><th class="r">Índice</th><th class="r">Coste / tarea</th></tr></thead><tbody>
+<tr><td><span class="num">1</span></td><td>GPT-6 Luna (low)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">22</td><td class="r cost">$0.0045</td></tr>
+<tr><td><span class="num">2</span></td><td>GPT-6 Luna (medium)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">30</td><td class="r cost">$0.02</td></tr>
+<tr><td><span class="num">3</span></td><td>GPT-6 Luna (high)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">33</td><td class="r cost">$0.03</td></tr>
+<tr><td><span class="num">4</span></td><td>GPT-6 Luna (xhigh)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">35</td><td class="r cost">$0.04</td></tr>
+<tr><td><span class="num">5</span></td><td>GPT-6 Luna (max)<span class="tag alt">VOLUMEN / BAJO COSTE</span></td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">38</td><td class="r cost">$0.07</td></tr>
+<tr><td><span class="num">6</span></td><td>Claude Haiku 5.5 (xhigh)<span class="tag warn">MUY RÁPIDA · OJO &gt;100K</span></td><td><span class="dot" style="background:#8b5cf6"></span>Anthropic</td><td class="r">41</td><td class="r cost">$0.12</td></tr>
+<tr><td><span class="num">7</span></td><td>GPT-6.1 Sol (low)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">42</td><td class="r cost">$0.13</td></tr>
+<tr class="ref"><td><span class="num">8</span></td><td>GPT-6.1 Sol (medium)<span class="tag">REFERENCIA</span></td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">48</td><td class="r cost">$0.21</td></tr>
+<tr><td><span class="num">9</span></td><td>GPT-6.1 Sol (high)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">50</td><td class="r cost">$0.32</td></tr>
+<tr><td><span class="num">10</span></td><td>GPT-6.1 Sol (xhigh)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">51</td><td class="r cost">$0.39</td></tr>
+<tr><td><span class="num">11</span></td><td>GPT-6.1 Sol (max)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">52</td><td class="r cost">$0.72</td></tr>
+<tr><td><span class="num">12</span></td><td>Claude Opus 5.5 (high)</td><td><span class="dot" style="background:#8b5cf6"></span>Anthropic</td><td class="r">54</td><td class="r cost">$1.82</td></tr>
+<tr><td><span class="num">13</span></td><td>Claude Opus 5.5 (xhigh)</td><td><span class="dot" style="background:#8b5cf6"></span>Anthropic</td><td class="r">56</td><td class="r cost">$3.46</td></tr>
+<tr><td><span class="num">14</span></td><td>Claude Opus 5.5 (max)</td><td><span class="dot" style="background:#8b5cf6"></span>Anthropic</td><td class="r">58</td><td class="r cost">$5.98</td></tr>
+</tbody></table></div>
+<details><summary>Modelos disponibles en Copilot que no entran (dominados o sin coste publicado)</summary><p class="foot">Claude Sonnet 5.5 (max) (56, $5.46), GPT-6 Astra (max) (53, $3.26), Claude Fable 5.1 (xhigh) (53, $5.98), Claude Fable 5.1 (max) (53, $7.63), Claude Sonnet 5.5 (xhigh) (52, $2.01), GPT-6 Astra (xhigh) (52, $2.31), Claude Opus 5.5 (medium) (51, $1.34), GPT-6 Astra (high) (51, $1.73), Claude Fable 5.1 (high) (51, $3.91), Claude Opus 5 (max) (51, $5.86), GPT-6 Astra (medium) (50, $1.54), Claude Opus 5 (xhigh) (50, $4.88), Claude Fable 5 (max) (50, $8.75), Claude Fable 5.1 (medium) (49, $2.98), GPT-6 Sol (max) (48, $1.04), Claude Opus 5 (high) (48, $3.61), Claude Sonnet 5.5 (high) (47, $0.88), GPT-5.6 Sol (max) (47, $1.99), Claude Fable 5.1 (low) (47, $2.37), GPT-6 Astra (low) (46, $0.82), Grok 4.7 (high) (46, $2.73), Grok 4.7 (xhigh) (46, $3.74), Claude Opus 5 (medium) (45, $2.19), GPT-6 Sol (xhigh) (44, $0.52), GPT-5.6 Sol (xhigh) (44, $1.18), Grok 4.6 (high) (44, $1.48), Grok 4.6 (xhigh) (44, $1.75), Kimi K3 (max) (44, $2.00), Claude Haiku 5.5 (max) (43, $0.21), Grok 4.6 (medium) (43, $1.14), GPT-6 Sol (high) (42, $0.37), Claude Opus 5.5 (low) (42, $0.55), GPT-5.6 Sol (high) (42, $0.81), Grok 4.7 (low) (42, $1.25), GPT-5.6 Terra (max) (42, $1.40), Claude Opus 4.8 (max) (42, $4.08), Claude Sonnet 5.5 (medium) (41, $0.48), Gemini 3.8 Flash (high) (41, $1.24), Gemini 3.7 Flash (medium) (40, n/d), GPT-6 Sol (medium) (40, $0.25), Gemini 3.8 Flash (medium) (40, $0.93), GPT-5.4 (xhigh) (39, n/d), GPT-5.6 Sol (medium) (39, $0.51), Grok 4.5 (high) (39, $0.88), Gemini 3.7 Flash (high) (39, $0.93), Claude Opus 5 (low) (39, $1.10), Claude Haiku 5.5 (high) (38, $0.08), GPT-5.6 Terra (xhigh) (38, $0.63), GPT-5.5 (xhigh) (38, $2.63), Claude Sonnet 5 (max) (38, $5.09), Gemini 3.7 Flash (low) (37, n/d), GPT-5.6 Luna (max) (37, $0.18), GPT-5.5 (high) (37, $1.54), Claude Sonnet 5.5 (low) (36, $0.35), GPT-5.6 Luna (xhigh) (35, $0.09), Grok 4.6 (low) (35, $0.38), Claude Haiku 5.5 (medium) (34, $0.05), GPT-6 Sol (low) (34, $0.13), GPT-5.6 Terra (high) (34, $0.34), GPT-5.5 (medium) (34, $0.90), Claude Sonnet 5 (xhigh) (34, $2.87), GPT-5.3 Codex (xhigh) (33, n/d), Gemini 3.8 Flash (low) (33, n/d), GPT-5.6 Sol (low) (33, $0.26), GPT-5.6 Luna (high) (32, $0.04), Claude Sonnet 5 (high) (32, $1.79), GPT-5.5 (low) (31, n/d), GPT-5.6 Terra (medium) (30, $0.18), Kimi K3 (low) (30, $1.15), Claude Haiku 5.5 (low) (29, $0.02), GPT-6 Sol (non-reasoning) (29, $0.33), GPT-5.4 (low) (28, n/d), GPT-5.6 Sol (non-reasoning) (28, n/d), Claude Sonnet 5 (medium) (28, $1.00), GPT-5.6 Terra (low) (27, $0.14), GPT-5.6 Luna (medium) (25, $0.02), GPT-5.4 mini (xhigh) (24, $0.45), Claude Sonnet 5 (low) (24, $0.51), GPT-5.5 (non-reasoning) (23, n/d), GPT-5 mini (medium) (21, n/d), GPT-5.6 Luna (low) (21, $0.0098), GPT-5.6 Terra (non-reasoning) (21, $0.14), GPT-5.4 mini (medium) (20, n/d), GPT-5.4 (non-reasoning) (18, n/d), GPT-6 Luna (non-reasoning) (18, $0.01), GPT-5 mini (high) (17, $0.05), Claude 4.5 Haiku (17, $0.28), GPT-5.6 Luna (non-reasoning) (16, $0.01), Claude 4.5 Haiku (non-reasoning) (15, n/d), GPT-5.4 mini (non-reasoning) (11, n/d), GPT-5 mini (minimal) (10, n/d)</p></details></section>
+<section id="coding"><h2>Recomendación para programación</h2><p>Ranking por Terminal-Bench 4.0 de Artificial Analysis (el mismo que en septiembre), con su coste por tarea. El coste de contexto largo aplica los tramos de Copilot a los tokens reales de cada tarea: en GPT, por encima de 272K tokens, x2 la entrada y x1,5 la salida; en Haiku 5.5, x5 por encima de 100K; Claude Sonnet y Opus 5.5 tienen tarifa plana.</p>
+<div class="scroll"><table class="tbl"><thead><tr><th>#</th><th>Modelo</th><th>Proveedor</th><th class="r">Índice</th><th class="r">Coste<small>normal</small></th><th class="r">Coste<small>long context</small></th></tr></thead><tbody>
+<tr><td><span class="num">1</span></td><td>GPT-6 Luna (medium)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">2,5</td><td class="r cost">$0.07</td><td class="r"><span class="lc">~$0.13</span></td></tr>
+<tr><td><span class="num">2</span></td><td>Claude Haiku 5.5 (low)<span class="tag warn">BARATO · OJO &gt;100K</span></td><td><span class="dot" style="background:#8b5cf6"></span>Anthropic</td><td class="r">12,6</td><td class="r cost">$0.12</td><td class="r"><span class="lc">~$0.59</span></td></tr>
+<tr><td><span class="num">3</span></td><td>Claude Haiku 5.5 (medium)</td><td><span class="dot" style="background:#8b5cf6"></span>Anthropic</td><td class="r">15,2</td><td class="r cost">$0.19</td><td class="r"><span class="lc">~$0.97</span></td></tr>
+<tr><td><span class="num">4</span></td><td>Claude Haiku 5.5 (high)</td><td><span class="dot" style="background:#8b5cf6"></span>Anthropic</td><td class="r">21,7</td><td class="r cost">$0.33</td><td class="r"><span class="lc">~$1.66</span></td></tr>
+<tr><td><span class="num">5</span></td><td>GPT-6.1 Sol (low)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">30,8</td><td class="r cost">$0.38</td><td class="r"><span class="lc">~$0.68</span></td></tr>
+<tr class="ref"><td><span class="num">6</span></td><td>GPT-6.1 Sol (medium)<span class="tag">REFERENCIA</span></td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">48,0</td><td class="r cost">$0.61</td><td class="r"><span class="lc">~$1.07</span></td></tr>
+<tr><td><span class="num">7</span></td><td>GPT-6.1 Sol (high)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">51,5</td><td class="r cost">$0.83</td><td class="r"><span class="lc">~$1.44</span></td></tr>
+<tr><td><span class="num">8</span></td><td>GPT-6.1 Sol (xhigh)<span class="tag alt">PLANIFICACIÓN</span></td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">54,0</td><td class="r cost">$1.03</td><td class="r"><span class="lc">~$1.77</span></td></tr>
+<tr><td><span class="num">9</span></td><td>GPT-6.1 Sol (max)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">56,1</td><td class="r cost">$1.82</td><td class="r"><span class="lc">~$3.10</span></td></tr>
+<tr><td><span class="num">10</span></td><td>Claude Opus 5.5 (high)</td><td><span class="dot" style="background:#8b5cf6"></span>Anthropic</td><td class="r">56,6</td><td class="r cost">$5.12</td><td class="r"><span class="flat">$5.12<small>tarifa plana</small></span></td></tr>
+<tr><td><span class="num">11</span></td><td>GPT-6 Astra (xhigh)</td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">59,6</td><td class="r cost">$5.86</td><td class="r"><span class="lc hi">~$10.63</span></td></tr>
+<tr><td><span class="num">12</span></td><td>Claude Sonnet 5.5 (max)<span class="tag warn">SOLO TAREAS MUY DURAS</span></td><td><span class="dot" style="background:#8b5cf6"></span>Anthropic</td><td class="r">63,6</td><td class="r cost">$12.65</td><td class="r"><span class="flat">$12.65<small>tarifa plana</small></span></td></tr>
+</tbody></table></div>
+<details><summary>Modelos de Copilot medidos en Terminal-Bench 4.0 que no entran</summary><p class="foot">Claude Opus 5.5 (xhigh) (59,6, $8.78), Claude Opus 5.5 (max) (59,6, $13.11), GPT-6 Astra (max) (59,1, $8.50), Claude Sonnet 5.5 (xhigh) (57,1, $6.08), Claude Fable 5.1 (xhigh) (55,1, $15.78), GPT-6 Astra (high) (54,0, $4.05), Claude Opus 5.5 (medium) (52,5, $4.04), Claude Fable 5.1 (high) (52,0, $11.64), Claude Fable 5.1 (max) (52,0, $19.22), GPT-6 Astra (medium) (49,5, $4.43), Claude Opus 5 (max) (49,0, $19.29), Claude Opus 5 (xhigh) (46,5, $17.35), Claude Opus 5 (high) (46,0, $13.14), Claude Fable 5.1 (medium) (44,9, $9.12), Claude Sonnet 5.5 (high) (43,9, $2.19), GPT-6 Sol (max) (43,9, $4.00), Claude Fable 5 (max) (42,4, $34.91), GPT-6 Astra (low) (41,9, $2.25), Claude Fable 5.1 (low) (40,4, $7.32), GPT-5.6 Sol (max) (39,9, $8.09), GPT-5.6 Terra (max) (35,4, $6.39), Claude Opus 5 (medium) (34,3, $9.18), Claude Haiku 5.5 (max) (32,8, $0.65), Claude Opus 5.5 (low) (31,3, $2.08), GPT-6 Sol (xhigh) (30,3, $1.91), Claude Sonnet 5.5 (medium) (29,8, $1.58), Claude Haiku 5.5 (xhigh) (29,3, $0.46), GPT-6 Sol (high) (26,3, $1.60), Claude Opus 5 (low) (26,3, $5.18), Grok 4.7 (xhigh) (25,8, $14.60), GPT-5.6 Sol (xhigh) (24,7, $3.46), Grok 4.7 (high) (24,7, $8.95), Claude Opus 4.8 (max) (21,7, $18.15), Grok 4.6 (high) (21,2, $5.88), Claude Sonnet 5.5 (low) (20,7, $1.28), GPT-5.6 Sol (high) (20,7, $2.22), Gemini 3.8 Flash (medium) (19,7, $4.61), Gemini 3.8 Flash (high) (19,7, $5.84), GPT-6 Sol (medium) (18,7, $1.12), Grok 4.6 (xhigh) (17,2, $6.60), Grok 4.7 (low) (16,2, $6.33), GPT-5.6 Sol (medium) (14,6, $1.64), GPT-5.5 (xhigh) (14,6, $11.56), Claude Sonnet 5 (max) (14,1, $19.69), Gemini 3.7 Flash (high) (13,6, $4.31), Grok 4.6 (medium) (13,1, $4.93), GPT-6 Luna (max) (12,6, $0.24), Kimi K3 (max) (12,6, $5.09), Kimi K3 (low) (12,6, $9.47), GPT-5.6 Luna (max) (11,6, $0.85), Grok 4.5 (high) (10,6, $7.33), GPT-5.6 Terra (xhigh) (10,1, $1.57), Gemini 3.8 Flash (low) (10,1, $5.38), GPT-6 Sol (low) (9,1, $0.49), GPT-5.5 (high) (9,1, $5.59), GPT-6 Luna (xhigh) (8,1, $0.20), Claude Sonnet 5 (xhigh) (7,1, $12.80), GPT-5.5 (medium) (5,1, $2.99), Claude Sonnet 5 (high) (5,1, $9.40), GPT-6 Luna (high) (4,5, $0.12), GPT-5.6 Luna (xhigh) (3,5, $0.30), Grok 4.6 (low) (3,0, $1.81), GPT-5.6 Luna (high) (2,5, $0.11), Claude Sonnet 5 (low) (2,5, $2.66), GPT-5.4 mini (xhigh) (2,0, $1.63), Claude Sonnet 5 (medium) (2,0, $5.53), GPT-5.6 Terra (low) (1,5, $0.24), GPT-5.6 Terra (high) (1,5, $0.63), GPT-5.6 Terra (medium) (1,0, $0.34), GPT-5.6 Sol (low) (1,0, $0.52)</p></details></section>
+<section id="grafico"><h2>Inteligencia vs coste</h2><p class="legend">Línea discontinua = frontera eficiente (Copilot). Círculos huecos = fuera de Copilot (solo referencia). <i style="background:#ef4444"></i>Alibaba<i style="background:#8b5cf6"></i>Anthropic<i style="background:#4f46e5"></i>DeepSeek<i style="background:#14b8a6"></i>Google<i style="background:#0ea5e9"></i>Meta<i style="background:#f59e0b"></i>Moonshot AI<i style="background:#2563eb"></i>OpenAI<i style="background:#f97316"></i>Xiaomi<i style="background:#111827"></i>xAI</p>
+<h3 style="font-size:16px;margin:12px 0 0">Uso general</h3><svg viewBox="0 0 820 440" role="img" aria-label="Índice general vs coste" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Inter,Arial,sans-serif">
+<line x1="56.0" x2="56.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="56.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.001</text>
+<line x1="112.0" x2="112.0" y1="28" y2="392" stroke="#eef2f7"/>
+<line x1="186.0" x2="186.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="186.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.005</text>
+<line x1="242.0" x2="242.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="242.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.01</text>
+<line x1="298.0" x2="298.0" y1="28" y2="392" stroke="#eef2f7"/>
+<line x1="372.0" x2="372.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="372.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.05</text>
+<line x1="428.0" x2="428.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="428.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.10</text>
+<line x1="484.0" x2="484.0" y1="28" y2="392" stroke="#eef2f7"/>
+<line x1="558.0" x2="558.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="558.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.50</text>
+<line x1="614.0" x2="614.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="614.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$1.00</text>
+<line x1="670.0" x2="670.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="670.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$2.00</text>
+<line x1="744.0" x2="744.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="744.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$5.00</text>
+<line x1="800.0" x2="800.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="800.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$10.00</text>
+<line x1="56" x2="800" y1="392.0" y2="392.0" stroke="#eef2f7"/><text x="48" y="395.0" font-size="10" fill="#94a3b8" text-anchor="end">15</text>
+<line x1="56" x2="800" y1="351.6" y2="351.6" stroke="#eef2f7"/><text x="48" y="354.6" font-size="10" fill="#94a3b8" text-anchor="end">20</text>
+<line x1="56" x2="800" y1="311.1" y2="311.1" stroke="#eef2f7"/><text x="48" y="314.1" font-size="10" fill="#94a3b8" text-anchor="end">25</text>
+<line x1="56" x2="800" y1="270.7" y2="270.7" stroke="#eef2f7"/><text x="48" y="273.7" font-size="10" fill="#94a3b8" text-anchor="end">30</text>
+<line x1="56" x2="800" y1="230.2" y2="230.2" stroke="#eef2f7"/><text x="48" y="233.2" font-size="10" fill="#94a3b8" text-anchor="end">35</text>
+<line x1="56" x2="800" y1="189.8" y2="189.8" stroke="#eef2f7"/><text x="48" y="192.8" font-size="10" fill="#94a3b8" text-anchor="end">40</text>
+<line x1="56" x2="800" y1="149.3" y2="149.3" stroke="#eef2f7"/><text x="48" y="152.3" font-size="10" fill="#94a3b8" text-anchor="end">45</text>
+<line x1="56" x2="800" y1="108.9" y2="108.9" stroke="#eef2f7"/><text x="48" y="111.9" font-size="10" fill="#94a3b8" text-anchor="end">50</text>
+<line x1="56" x2="800" y1="68.4" y2="68.4" stroke="#eef2f7"/><text x="48" y="71.4" font-size="10" fill="#94a3b8" text-anchor="end">55</text>
+<line x1="56" x2="800" y1="28.0" y2="28.0" stroke="#eef2f7"/><text x="48" y="31.0" font-size="10" fill="#94a3b8" text-anchor="end">60</text>
+<text x="428.0" y="432" font-size="11" fill="#64748b" text-anchor="middle">Coste por tarea (USD, escala log) →</text>
+<text x="14" y="210.0" font-size="11" fill="#64748b" text-anchor="middle" transform="rotate(-90 14 210.0)">Índice ↑</text>
+<path d="M177.5,335.4 L287.2,270.7 L328.0,246.4 L358.3,230.2 L396.6,206.0 L445.2,181.7 L449.7,173.6 L489.3,125.1 L521.7,108.9 L538.5,100.8 L587.9,92.7 L662.5,76.5 L714.2,60.4 L758.5,44.2" fill="none" stroke="#f5b301" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="242.8" cy="383.9" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (non-reasoning) · OpenAI · índice 16 · $0.01</title></circle>
+<circle cx="377.5" cy="375.8" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5 mini (high) · OpenAI · índice 17 · $0.05</title></circle>
+<circle cx="510.2" cy="375.8" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude 4.5 Haiku · Anthropic · índice 17 · $0.28</title></circle>
+<circle cx="251.9" cy="367.7" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Luna (non-reasoning) · OpenAI · índice 18 · $0.01</title></circle>
+<circle cx="240.4" cy="343.5" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (low) · OpenAI · índice 21 · $0.0098</title></circle>
+<circle cx="455.0" cy="343.5" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (non-reasoning) · OpenAI · índice 21 · $0.14</title></circle>
+<circle cx="177.5" cy="335.4" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6 Luna (low) · OpenAI · índice 22 · $0.0045</title></circle>
+<text x="186.5" y="328.4" font-size="9.5" fill="#334155" text-anchor="start">6 Luna (low)</text>
+<circle cx="549.0" cy="319.2" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.4 mini (xhigh) · OpenAI · índice 24 · $0.45</title></circle>
+<circle cx="559.4" cy="319.2" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5 (low) · Anthropic · índice 24 · $0.51</title></circle>
+<circle cx="277.9" cy="311.1" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (medium) · OpenAI · índice 25 · $0.02</title></circle>
+<circle cx="457.7" cy="294.9" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (low) · OpenAI · índice 27 · $0.14</title></circle>
+<circle cx="613.9" cy="286.8" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5 (medium) · Anthropic · índice 28 · $1.00</title></circle>
+<circle cx="314.4" cy="278.8" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (low) · Anthropic · índice 29 · $0.02</title></circle>
+<circle cx="525.3" cy="278.8" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (non-reasoning) · OpenAI · índice 29 · $0.33</title></circle>
+<circle cx="287.2" cy="270.7" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6 Luna (medium) · OpenAI · índice 30 · $0.02</title></circle>
+<text x="278.2" y="274.7" font-size="9.5" fill="#334155" text-anchor="end">6 Luna (medium)</text>
+<circle cx="477.0" cy="270.7" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (medium) · OpenAI · índice 30 · $0.18</title></circle>
+<circle cx="625.0" cy="270.7" r="4" fill="#f59e0b" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Kimi K3 (low) · Moonshot AI · índice 30 · $1.15</title></circle>
+<circle cx="361.7" cy="254.5" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (high) · OpenAI · índice 32 · $0.04</title></circle>
+<circle cx="661.1" cy="254.5" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5 (high) · Anthropic · índice 32 · $1.79</title></circle>
+<circle cx="328.0" cy="246.4" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6 Luna (high) · OpenAI · índice 33 · $0.03</title></circle>
+<text x="337.0" y="239.4" font-size="9.5" fill="#334155" text-anchor="start">6 Luna (high)</text>
+<circle cx="505.4" cy="246.4" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Sol (low) · OpenAI · índice 33 · $0.26</title></circle>
+<circle cx="367.0" cy="238.3" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (medium) · Anthropic · índice 34 · $0.05</title></circle>
+<circle cx="450.9" cy="238.3" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (low) · OpenAI · índice 34 · $0.13</title></circle>
+<circle cx="526.4" cy="238.3" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (high) · OpenAI · índice 34 · $0.34</title></circle>
+<circle cx="605.6" cy="238.3" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.5 (medium) · OpenAI · índice 34 · $0.90</title></circle>
+<circle cx="699.2" cy="238.3" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5 (xhigh) · Anthropic · índice 34 · $2.87</title></circle>
+<circle cx="358.3" cy="230.2" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6 Luna (xhigh) · OpenAI · índice 35 · $0.04</title></circle>
+<text x="349.3" y="234.2" font-size="9.5" fill="#334155" text-anchor="end">6 Luna (xhigh)</text>
+<circle cx="415.2" cy="230.2" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (xhigh) · OpenAI · índice 35 · $0.09</title></circle>
+<circle cx="534.9" cy="230.2" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.6 (low) · xAI · índice 35 · $0.38</title></circle>
+<circle cx="528.1" cy="222.1" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (low) · Anthropic · índice 36 · $0.35</title></circle>
+<circle cx="474.7" cy="214.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (max) · OpenAI · índice 37 · $0.18</title></circle>
+<circle cx="648.9" cy="214.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.5 (high) · OpenAI · índice 37 · $1.54</title></circle>
+<circle cx="389.8" cy="206.0" r="4" fill="none" stroke="#f97316" stroke-width="1.5" stroke-dasharray="2 1.5"><title>MiMo-V2.6-Flash · Xiaomi · índice 38 · $0.06 · fuera de Copilot</title></circle>
+<circle cx="396.6" cy="206.0" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6 Luna (max) · OpenAI · índice 38 · $0.07</title></circle>
+<text x="405.6" y="199.0" font-size="9.5" fill="#334155" text-anchor="start">6 Luna (max)</text>
+<circle cx="409.4" cy="206.0" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (high) · Anthropic · índice 38 · $0.08</title></circle>
+<circle cx="576.9" cy="206.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (xhigh) · OpenAI · índice 38 · $0.63</title></circle>
+<circle cx="692.2" cy="206.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.5 (xhigh) · OpenAI · índice 38 · $2.63</title></circle>
+<circle cx="745.5" cy="206.0" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5 (max) · Anthropic · índice 38 · $5.09</title></circle>
+<circle cx="506.8" cy="197.9" r="4" fill="none" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="2 1.5"><title>DeepSeek V4.1 Flash (max) · DeepSeek · índice 39 · $0.27 · fuera de Copilot</title></circle>
+<circle cx="558.8" cy="197.9" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Sol (medium) · OpenAI · índice 39 · $0.51</title></circle>
+<circle cx="603.7" cy="197.9" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.5 (high) · xAI · índice 39 · $0.88</title></circle>
+<circle cx="607.7" cy="197.9" r="4" fill="#14b8a6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Gemini 3.7 Flash (high) · Google · índice 39 · $0.93</title></circle>
+<circle cx="621.6" cy="197.9" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5 (low) · Anthropic · índice 39 · $1.10</title></circle>
+<circle cx="501.1" cy="189.8" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (medium) · OpenAI · índice 40 · $0.25</title></circle>
+<circle cx="534.2" cy="189.8" r="4" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="2 1.5"><title>Qwen3.8-Flash-Next · Alibaba · índice 40 · $0.37 · fuera de Copilot</title></circle>
+<circle cx="608.2" cy="189.8" r="4" fill="#14b8a6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Gemini 3.8 Flash (medium) · Google · índice 40 · $0.93</title></circle>
+<circle cx="445.2" cy="181.7" r="6" fill="#8b5cf6" fill-opacity="1" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (xhigh) · Anthropic · índice 41 · $0.12</title></circle>
+<text x="436.2" y="185.7" font-size="9.5" fill="#334155" text-anchor="end">Haiku 5.5 (xhigh)</text>
+<circle cx="555.3" cy="181.7" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (medium) · Anthropic · índice 41 · $0.48</title></circle>
+<circle cx="631.6" cy="181.7" r="4" fill="#14b8a6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Gemini 3.8 Flash (high) · Google · índice 41 · $1.24</title></circle>
+<circle cx="449.7" cy="173.6" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6.1 Sol (low) · OpenAI · índice 42 · $0.13</title></circle>
+<text x="458.7" y="166.6" font-size="9.5" fill="#334155" text-anchor="start">6.1 Sol (low)</text>
+<circle cx="534.3" cy="173.6" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (high) · OpenAI · índice 42 · $0.37</title></circle>
+<circle cx="565.9" cy="173.6" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (low) · Anthropic · índice 42 · $0.55</title></circle>
+<circle cx="596.8" cy="173.6" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Sol (high) · OpenAI · índice 42 · $0.81</title></circle>
+<circle cx="631.9" cy="173.6" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.7 (low) · xAI · índice 42 · $1.25</title></circle>
+<circle cx="641.1" cy="173.6" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (max) · OpenAI · índice 42 · $1.40</title></circle>
+<circle cx="727.6" cy="173.6" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 4.8 (max) · Anthropic · índice 42 · $4.08</title></circle>
+<circle cx="489.0" cy="165.5" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (max) · Anthropic · índice 43 · $0.21</title></circle>
+<circle cx="624.9" cy="165.5" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.6 (medium) · xAI · índice 43 · $1.14</title></circle>
+<circle cx="561.3" cy="157.4" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (xhigh) · OpenAI · índice 44 · $0.52</title></circle>
+<circle cx="627.7" cy="157.4" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Sol (xhigh) · OpenAI · índice 44 · $1.18</title></circle>
+<circle cx="645.9" cy="157.4" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.6 (high) · xAI · índice 44 · $1.48</title></circle>
+<circle cx="659.3" cy="157.4" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.6 (xhigh) · xAI · índice 44 · $1.75</title></circle>
+<circle cx="670.0" cy="157.4" r="4" fill="#f59e0b" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Kimi K3 (max) · Moonshot AI · índice 44 · $2.00</title></circle>
+<circle cx="677.3" cy="149.3" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5 (medium) · Anthropic · índice 45 · $2.19</title></circle>
+<circle cx="451.2" cy="141.2" r="4" fill="none" stroke="#f97316" stroke-width="1.5" stroke-dasharray="2 1.5"><title>MiMo-V2.6-Pro · Xiaomi · índice 46 · $0.13 · fuera de Copilot</title></circle>
+<circle cx="597.7" cy="141.2" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Astra (low) · OpenAI · índice 46 · $0.82</title></circle>
+<circle cx="695.0" cy="141.2" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.7 (high) · xAI · índice 46 · $2.73</title></circle>
+<circle cx="720.5" cy="141.2" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.7 (xhigh) · xAI · índice 46 · $3.74</title></circle>
+<circle cx="604.1" cy="133.2" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (high) · Anthropic · índice 47 · $0.88</title></circle>
+<circle cx="669.5" cy="133.2" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Sol (max) · OpenAI · índice 47 · $1.99</title></circle>
+<circle cx="683.7" cy="133.2" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (low) · Anthropic · índice 47 · $2.37</title></circle>
+<circle cx="489.3" cy="125.1" r="6" fill="#2563eb" fill-opacity="1" stroke="#1e293b" stroke-width="2"><title>GPT-6.1 Sol (medium) · OpenAI · índice 48 · $0.21</title></circle>
+<text x="480.3" y="129.1" font-size="9.5" fill="#334155" text-anchor="end">6.1 Sol (medium)</text>
+<circle cx="617.5" cy="125.1" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (max) · OpenAI · índice 48 · $1.04</title></circle>
+<circle cx="652.2" cy="125.1" r="4" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="2 1.5"><title>Muse Spark 1.3 (max) · Meta · índice 48 · $1.60 · fuera de Copilot</title></circle>
+<circle cx="717.8" cy="125.1" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5 (high) · Anthropic · índice 48 · $3.61</title></circle>
+<circle cx="702.3" cy="117.0" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (medium) · Anthropic · índice 49 · $2.98</title></circle>
+<circle cx="521.7" cy="108.9" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6.1 Sol (high) · OpenAI · índice 50 · $0.32</title></circle>
+<text x="530.7" y="101.9" font-size="9.5" fill="#334155" text-anchor="start">6.1 Sol (high)</text>
+<circle cx="648.9" cy="108.9" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Astra (medium) · OpenAI · índice 50 · $1.54</title></circle>
+<circle cx="742.0" cy="108.9" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5 (xhigh) · Anthropic · índice 50 · $4.88</title></circle>
+<circle cx="789.2" cy="108.9" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5 (max) · Anthropic · índice 50 · $8.75</title></circle>
+<circle cx="538.5" cy="100.8" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6.1 Sol (xhigh) · OpenAI · índice 51 · $0.39</title></circle>
+<text x="529.5" y="104.8" font-size="9.5" fill="#334155" text-anchor="end">6.1 Sol (xhigh)</text>
+<circle cx="637.4" cy="100.8" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (medium) · Anthropic · índice 51 · $1.34</title></circle>
+<circle cx="658.1" cy="100.8" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Astra (high) · OpenAI · índice 51 · $1.73</title></circle>
+<circle cx="724.2" cy="100.8" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (high) · Anthropic · índice 51 · $3.91</title></circle>
+<circle cx="756.8" cy="100.8" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5 (max) · Anthropic · índice 51 · $5.86</title></circle>
+<circle cx="587.9" cy="92.7" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6.1 Sol (max) · OpenAI · índice 52 · $0.72</title></circle>
+<text x="596.9" y="85.7" font-size="9.5" fill="#334155" text-anchor="start">6.1 Sol (max)</text>
+<circle cx="670.5" cy="92.7" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (xhigh) · Anthropic · índice 52 · $2.01</title></circle>
+<circle cx="681.6" cy="92.7" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Astra (xhigh) · OpenAI · índice 52 · $2.31</title></circle>
+<circle cx="669.6" cy="84.6" r="4" fill="none" stroke="#14b8a6" stroke-width="1.5" stroke-dasharray="2 1.5"><title>Gemini 4 Argon (high) · Google · índice 53 · $1.99 · fuera de Copilot</title></circle>
+<circle cx="709.4" cy="84.6" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Astra (max) · OpenAI · índice 53 · $3.26</title></circle>
+<circle cx="758.4" cy="84.6" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (xhigh) · Anthropic · índice 53 · $5.98</title></circle>
+<circle cx="778.1" cy="84.6" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (max) · Anthropic · índice 53 · $7.63</title></circle>
+<circle cx="662.5" cy="76.5" r="6" fill="#8b5cf6" fill-opacity="1" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (high) · Anthropic · índice 54 · $1.82</title></circle>
+<text x="653.5" y="80.5" font-size="9.5" fill="#334155" text-anchor="end">Opus 5.5 (high)</text>
+<circle cx="714.2" cy="60.4" r="6" fill="#8b5cf6" fill-opacity="1" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (xhigh) · Anthropic · índice 56 · $3.46</title></circle>
+<text x="705.2" y="53.4" font-size="9.5" fill="#334155" text-anchor="end">Opus 5.5 (xhigh)</text>
+<circle cx="751.1" cy="60.4" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (max) · Anthropic · índice 56 · $5.46</title></circle>
+<circle cx="758.5" cy="44.2" r="6" fill="#8b5cf6" fill-opacity="1" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (max) · Anthropic · índice 58 · $5.98</title></circle>
+<text x="749.5" y="48.2" font-size="9.5" fill="#334155" text-anchor="end">Opus 5.5 (max)</text>
+</svg>
+<h3 style="font-size:16px;margin:12px 0 0">Programación</h3><svg viewBox="0 0 820 440" role="img" aria-label="Índice de programación vs coste" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Inter,Arial,sans-serif">
+<line x1="56.0" x2="56.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="56.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.001</text>
+<line x1="100.8" x2="100.8" y1="28" y2="392" stroke="#eef2f7"/>
+<line x1="160.0" x2="160.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="160.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.005</text>
+<line x1="204.8" x2="204.8" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="204.8" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.01</text>
+<line x1="249.6" x2="249.6" y1="28" y2="392" stroke="#eef2f7"/>
+<line x1="308.8" x2="308.8" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="308.8" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.05</text>
+<line x1="353.6" x2="353.6" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="353.6" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.10</text>
+<line x1="398.4" x2="398.4" y1="28" y2="392" stroke="#eef2f7"/>
+<line x1="457.6" x2="457.6" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="457.6" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.50</text>
+<line x1="502.4" x2="502.4" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="502.4" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$1.00</text>
+<line x1="547.2" x2="547.2" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="547.2" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$2.00</text>
+<line x1="606.4" x2="606.4" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="606.4" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$5.00</text>
+<line x1="651.2" x2="651.2" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="651.2" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$10.00</text>
+<line x1="696.0" x2="696.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="696.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$20.00</text>
+<line x1="755.2" x2="755.2" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="755.2" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$50.00</text>
+<line x1="800.0" x2="800.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="800.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$100.00</text>
+<line x1="56" x2="800" y1="392.0" y2="392.0" stroke="#eef2f7"/><text x="48" y="395.0" font-size="10" fill="#94a3b8" text-anchor="end">0</text>
+<line x1="56" x2="800" y1="364.0" y2="364.0" stroke="#eef2f7"/><text x="48" y="367.0" font-size="10" fill="#94a3b8" text-anchor="end">5</text>
+<line x1="56" x2="800" y1="336.0" y2="336.0" stroke="#eef2f7"/><text x="48" y="339.0" font-size="10" fill="#94a3b8" text-anchor="end">10</text>
+<line x1="56" x2="800" y1="308.0" y2="308.0" stroke="#eef2f7"/><text x="48" y="311.0" font-size="10" fill="#94a3b8" text-anchor="end">15</text>
+<line x1="56" x2="800" y1="280.0" y2="280.0" stroke="#eef2f7"/><text x="48" y="283.0" font-size="10" fill="#94a3b8" text-anchor="end">20</text>
+<line x1="56" x2="800" y1="252.0" y2="252.0" stroke="#eef2f7"/><text x="48" y="255.0" font-size="10" fill="#94a3b8" text-anchor="end">25</text>
+<line x1="56" x2="800" y1="224.0" y2="224.0" stroke="#eef2f7"/><text x="48" y="227.0" font-size="10" fill="#94a3b8" text-anchor="end">30</text>
+<line x1="56" x2="800" y1="196.0" y2="196.0" stroke="#eef2f7"/><text x="48" y="199.0" font-size="10" fill="#94a3b8" text-anchor="end">35</text>
+<line x1="56" x2="800" y1="168.0" y2="168.0" stroke="#eef2f7"/><text x="48" y="171.0" font-size="10" fill="#94a3b8" text-anchor="end">40</text>
+<line x1="56" x2="800" y1="140.0" y2="140.0" stroke="#eef2f7"/><text x="48" y="143.0" font-size="10" fill="#94a3b8" text-anchor="end">45</text>
+<line x1="56" x2="800" y1="112.0" y2="112.0" stroke="#eef2f7"/><text x="48" y="115.0" font-size="10" fill="#94a3b8" text-anchor="end">50</text>
+<line x1="56" x2="800" y1="84.0" y2="84.0" stroke="#eef2f7"/><text x="48" y="87.0" font-size="10" fill="#94a3b8" text-anchor="end">55</text>
+<line x1="56" x2="800" y1="56.0" y2="56.0" stroke="#eef2f7"/><text x="48" y="59.0" font-size="10" fill="#94a3b8" text-anchor="end">60</text>
+<line x1="56" x2="800" y1="28.0" y2="28.0" stroke="#eef2f7"/><text x="48" y="31.0" font-size="10" fill="#94a3b8" text-anchor="end">65</text>
+<text x="428.0" y="432" font-size="11" fill="#64748b" text-anchor="middle">Coste por tarea (USD, escala log) →</text>
+<text x="14" y="210.0" font-size="11" fill="#64748b" text-anchor="middle" transform="rotate(-90 14 210.0)">Índice ↑</text>
+<path d="M332.0,378.0 L364.6,321.4 L396.4,306.9 L431.0,270.5 L440.4,219.5 L470.9,123.2 L490.2,103.6 L504.1,89.6 L541.2,77.8 L607.9,75.0 L616.6,58.2 L666.4,35.8" fill="none" stroke="#f5b301" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="165.0" cy="392.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Luna (low) · OpenAI · índice 0 · $0.0054</title></circle>
+<circle cx="215.5" cy="392.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (low) · OpenAI · índice 0 · $0.01</title></circle>
+<circle cx="379.2" cy="392.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5 mini (high) · OpenAI · índice 0 · $0.15</title></circle>
+<circle cx="518.0" cy="392.0" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude 4.5 Haiku · Anthropic · índice 0 · $1.27</title></circle>
+<circle cx="264.3" cy="389.2" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (medium) · OpenAI · índice 0 · $0.03</title></circle>
+<circle cx="432.8" cy="386.4" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (medium) · OpenAI · índice 1 · $0.34</title></circle>
+<circle cx="460.7" cy="386.4" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Sol (low) · OpenAI · índice 1 · $0.52</title></circle>
+<circle cx="411.1" cy="383.6" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (low) · OpenAI · índice 2 · $0.24</title></circle>
+<circle cx="472.4" cy="383.6" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (high) · OpenAI · índice 2 · $0.63</title></circle>
+<circle cx="534.0" cy="380.8" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.4 mini (xhigh) · OpenAI · índice 2 · $1.63</title></circle>
+<circle cx="613.0" cy="380.8" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5 (medium) · Anthropic · índice 2 · $5.53</title></circle>
+<circle cx="332.0" cy="378.0" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6 Luna (medium) · OpenAI · índice 2 · $0.07</title></circle>
+<text x="341.0" y="371.0" font-size="9.5" fill="#334155" text-anchor="start">6 Luna (medium)</text>
+<circle cx="357.5" cy="378.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (high) · OpenAI · índice 2 · $0.11</title></circle>
+<circle cx="565.7" cy="378.0" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5 (low) · Anthropic · índice 2 · $2.66</title></circle>
+<circle cx="540.8" cy="375.2" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.6 (low) · xAI · índice 3 · $1.81</title></circle>
+<circle cx="424.7" cy="372.4" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (xhigh) · OpenAI · índice 4 · $0.30</title></circle>
+<circle cx="365.6" cy="366.8" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Luna (high) · OpenAI · índice 4 · $0.12</title></circle>
+<circle cx="573.2" cy="363.4" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.5 (medium) · OpenAI · índice 5 · $2.99</title></circle>
+<circle cx="647.2" cy="363.4" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5 (high) · Anthropic · índice 5 · $9.40</title></circle>
+<circle cx="667.1" cy="352.2" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5 (xhigh) · Anthropic · índice 7 · $12.80</title></circle>
+<circle cx="397.8" cy="346.6" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Luna (xhigh) · OpenAI · índice 8 · $0.20</title></circle>
+<circle cx="456.2" cy="341.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (low) · OpenAI · índice 9 · $0.49</title></circle>
+<circle cx="613.6" cy="341.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.5 (high) · OpenAI · índice 9 · $5.59</title></circle>
+<circle cx="531.7" cy="335.4" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (xhigh) · OpenAI · índice 10 · $1.57</title></circle>
+<circle cx="611.1" cy="335.4" r="4" fill="#14b8a6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Gemini 3.8 Flash (low) · Google · índice 10 · $5.38</title></circle>
+<circle cx="631.2" cy="332.6" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.5 (high) · xAI · índice 11 · $7.33</title></circle>
+<circle cx="491.8" cy="327.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Luna (max) · OpenAI · índice 12 · $0.85</title></circle>
+<circle cx="364.6" cy="321.4" r="6" fill="#8b5cf6" fill-opacity="1" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (low) · Anthropic · índice 13 · $0.12</title></circle>
+<text x="355.6" y="325.4" font-size="9.5" fill="#334155" text-anchor="end">Haiku 5.5 (low)</text>
+<circle cx="409.1" cy="321.4" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Luna (max) · OpenAI · índice 13 · $0.24</title></circle>
+<circle cx="607.5" cy="321.4" r="4" fill="#f59e0b" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Kimi K3 (max) · Moonshot AI · índice 13 · $5.09</title></circle>
+<circle cx="647.7" cy="321.4" r="4" fill="#f59e0b" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Kimi K3 (low) · Moonshot AI · índice 13 · $9.47</title></circle>
+<circle cx="605.5" cy="318.6" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.6 (medium) · xAI · índice 13 · $4.93</title></circle>
+<circle cx="596.8" cy="315.8" r="4" fill="#14b8a6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Gemini 3.7 Flash (high) · Google · índice 14 · $4.31</title></circle>
+<circle cx="695.0" cy="313.0" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5 (max) · Anthropic · índice 14 · $19.69</title></circle>
+<circle cx="534.5" cy="310.2" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Sol (medium) · OpenAI · índice 15 · $1.64</title></circle>
+<circle cx="660.6" cy="310.2" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.5 (xhigh) · OpenAI · índice 15 · $11.56</title></circle>
+<circle cx="396.4" cy="306.9" r="6" fill="#8b5cf6" fill-opacity="1" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (medium) · Anthropic · índice 15 · $0.19</title></circle>
+<text x="405.4" y="299.9" font-size="9.5" fill="#334155" text-anchor="start">Haiku 5.5 (medium)</text>
+<circle cx="621.7" cy="301.3" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.7 (low) · xAI · índice 16 · $6.33</title></circle>
+<circle cx="624.3" cy="295.7" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.6 (xhigh) · xAI · índice 17 · $6.60</title></circle>
+<circle cx="509.6" cy="287.3" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (medium) · OpenAI · índice 19 · $1.12</title></circle>
+<circle cx="601.2" cy="281.7" r="4" fill="#14b8a6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Gemini 3.8 Flash (medium) · Google · índice 20 · $4.61</title></circle>
+<circle cx="616.5" cy="281.7" r="4" fill="#14b8a6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Gemini 3.8 Flash (high) · Google · índice 20 · $5.84</title></circle>
+<circle cx="518.6" cy="276.1" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (low) · Anthropic · índice 21 · $1.28</title></circle>
+<circle cx="554.1" cy="276.1" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Sol (high) · OpenAI · índice 21 · $2.22</title></circle>
+<circle cx="616.9" cy="273.3" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.6 (high) · xAI · índice 21 · $5.88</title></circle>
+<circle cx="431.0" cy="270.5" r="6" fill="#8b5cf6" fill-opacity="1" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (high) · Anthropic · índice 22 · $0.33</title></circle>
+<text x="422.0" y="274.5" font-size="9.5" fill="#334155" text-anchor="end">Haiku 5.5 (high)</text>
+<circle cx="689.7" cy="270.5" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 4.8 (max) · Anthropic · índice 22 · $18.15</title></circle>
+<circle cx="582.7" cy="253.7" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Sol (xhigh) · OpenAI · índice 25 · $3.46</title></circle>
+<circle cx="644.0" cy="253.7" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.7 (high) · xAI · índice 25 · $8.95</title></circle>
+<circle cx="675.7" cy="247.5" r="4" fill="#111827" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Grok 4.7 (xhigh) · xAI · índice 26 · $14.60</title></circle>
+<circle cx="532.7" cy="244.7" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (high) · OpenAI · índice 26 · $1.60</title></circle>
+<circle cx="608.7" cy="244.7" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5 (low) · Anthropic · índice 26 · $5.18</title></circle>
+<circle cx="511.8" cy="241.9" r="4" fill="none" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="2 1.5"><title>DeepSeek V4.1 Flash (max) · DeepSeek · índice 27 · $1.16 · fuera de Copilot</title></circle>
+<circle cx="452.3" cy="227.9" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (xhigh) · Anthropic · índice 29 · $0.46</title></circle>
+<circle cx="531.9" cy="225.1" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (medium) · Anthropic · índice 30 · $1.58</title></circle>
+<circle cx="544.1" cy="222.3" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (xhigh) · OpenAI · índice 30 · $1.91</title></circle>
+<circle cx="440.4" cy="219.5" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6.1 Sol (low) · OpenAI · índice 31 · $0.38</title></circle>
+<text x="449.4" y="212.5" font-size="9.5" fill="#334155" text-anchor="start">6.1 Sol (low)</text>
+<circle cx="549.7" cy="216.7" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (low) · Anthropic · índice 31 · $2.08</title></circle>
+<circle cx="474.8" cy="208.3" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (max) · Anthropic · índice 33 · $0.65</title></circle>
+<circle cx="645.7" cy="199.9" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5 (medium) · Anthropic · índice 34 · $9.18</title></circle>
+<circle cx="622.2" cy="193.8" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Terra (max) · OpenAI · índice 35 · $6.39</title></circle>
+<circle cx="637.5" cy="168.6" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-5.6 Sol (max) · OpenAI · índice 40 · $8.09</title></circle>
+<circle cx="631.1" cy="165.8" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (low) · Anthropic · índice 40 · $7.32</title></circle>
+<circle cx="554.8" cy="157.4" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Astra (low) · OpenAI · índice 42 · $2.25</title></circle>
+<circle cx="732.0" cy="154.6" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5 (max) · Anthropic · índice 42 · $34.91</title></circle>
+<circle cx="552.9" cy="146.2" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (high) · Anthropic · índice 44 · $2.19</title></circle>
+<circle cx="592.0" cy="146.2" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (max) · OpenAI · índice 44 · $4.00</title></circle>
+<circle cx="645.3" cy="140.6" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (medium) · Anthropic · índice 45 · $9.12</title></circle>
+<circle cx="668.8" cy="134.4" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5 (high) · Anthropic · índice 46 · $13.14</title></circle>
+<circle cx="686.8" cy="131.6" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5 (xhigh) · Anthropic · índice 46 · $17.35</title></circle>
+<circle cx="470.9" cy="123.2" r="6" fill="#2563eb" fill-opacity="1" stroke="#1e293b" stroke-width="2"><title>GPT-6.1 Sol (medium) · OpenAI · índice 48 · $0.61</title></circle>
+<text x="461.9" y="127.2" font-size="9.5" fill="#334155" text-anchor="end">6.1 Sol (medium)</text>
+<circle cx="693.7" cy="117.6" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5 (max) · Anthropic · índice 49 · $19.29</title></circle>
+<circle cx="598.6" cy="114.8" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Astra (medium) · OpenAI · índice 50 · $4.43</title></circle>
+<circle cx="490.2" cy="103.6" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6.1 Sol (high) · OpenAI · índice 52 · $0.83</title></circle>
+<text x="499.2" y="96.6" font-size="9.5" fill="#334155" text-anchor="start">6.1 Sol (high)</text>
+<circle cx="661.0" cy="100.8" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (high) · Anthropic · índice 52 · $11.64</title></circle>
+<circle cx="693.4" cy="100.8" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (max) · Anthropic · índice 52 · $19.22</title></circle>
+<circle cx="592.7" cy="98.0" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (medium) · Anthropic · índice 52 · $4.04</title></circle>
+<circle cx="504.1" cy="89.6" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6.1 Sol (xhigh) · OpenAI · índice 54 · $1.03</title></circle>
+<text x="495.1" y="93.6" font-size="9.5" fill="#334155" text-anchor="end">6.1 Sol (xhigh)</text>
+<circle cx="592.7" cy="89.6" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Astra (high) · OpenAI · índice 54 · $4.05</title></circle>
+<circle cx="680.7" cy="83.4" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (xhigh) · Anthropic · índice 55 · $15.78</title></circle>
+<circle cx="541.2" cy="77.8" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6.1 Sol (max) · OpenAI · índice 56 · $1.82</title></circle>
+<text x="550.2" y="70.8" font-size="9.5" fill="#334155" text-anchor="start">6.1 Sol (max)</text>
+<circle cx="607.9" cy="75.0" r="6" fill="#8b5cf6" fill-opacity="1" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (high) · Anthropic · índice 57 · $5.12</title></circle>
+<text x="598.9" y="79.0" font-size="9.5" fill="#334155" text-anchor="end">Opus 5.5 (high)</text>
+<circle cx="619.0" cy="72.2" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (xhigh) · Anthropic · índice 57 · $6.08</title></circle>
+<circle cx="626.1" cy="72.2" r="4" fill="none" stroke="#14b8a6" stroke-width="1.5" stroke-dasharray="2 1.5"><title>Gemini 4 Argon (high) · Google · índice 57 · $6.78 · fuera de Copilot</title></circle>
+<circle cx="640.7" cy="61.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Astra (max) · OpenAI · índice 59 · $8.50</title></circle>
+<circle cx="616.6" cy="58.2" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6 Astra (xhigh) · OpenAI · índice 60 · $5.86</title></circle>
+<text x="625.6" y="51.2" font-size="9.5" fill="#334155" text-anchor="start">6 Astra (xhigh)</text>
+<circle cx="642.8" cy="58.2" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (xhigh) · Anthropic · índice 60 · $8.78</title></circle>
+<circle cx="668.7" cy="58.2" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (max) · Anthropic · índice 60 · $13.11</title></circle>
+<circle cx="666.4" cy="35.8" r="6" fill="#8b5cf6" fill-opacity="1" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (max) · Anthropic · índice 64 · $12.65</title></circle>
+<text x="657.4" y="39.8" font-size="9.5" fill="#334155" text-anchor="end">Sonnet 5.5 (max)</text>
+</svg></section>
+<section id="legal"><h2>Recomendación para Legal</h2>
+<p>Para contratos, NDA, revisar cláusulas, resumir normativa, comparar borradores o notas de privacidad/RGPD. Para el día a día, GPT-6.1 Sol: en el benchmark legal saca 6,9 por $2,48 por tarea y casi no inventa (0,09 alucinaciones graves por tarea). En ChatGPT Business está en Work; el GPT-6 Sol medido por AA (esfuerzo max) da 3,6 con 0,07 alucinaciones. Para asuntos delicados, escalad a GPT-6 Astra (el modo Pro de ChatGPT Business): 8,6 puntos y la tasa de alucinaciones más baja (0,03), aunque cuesta $13,67. Grok 4.7 (xhigh) puntúa algo más (9,4 por $9,49), pero alucina bastante más (0,74) y solo está en Copilot. En Claude Team, lo mejor es Opus 5.5 (4,2, 0,59 alucinaciones), por detrás de GPT-6.1 Sol en este benchmark.</p>
+<p class="note">Un modelo de lenguaje no es un abogado: todo resultado necesita revisión humana y no sustituye el asesoramiento jurídico.</p>
+<p>Ranking por Harvey LAB-AA v1.1 de Artificial Analysis: 120 tareas legales reales (memorandos, redlines, resúmenes de declaraciones…). La puntuación es el % de tareas perfectas sin alucinaciones graves, por eso es baja. Coste por tarea del benchmark (no por contrato). AA solo ha medido algunas variantes, sobre todo en esfuerzo máximo.</p>
+<div class="scroll"><table class="tbl"><thead><tr><th>#</th><th>Modelo</th><th>Proveedor</th><th class="r">Índice</th><th class="r">Coste<small>normal</small></th><th class="r">Coste<small>long context</small></th><th class="r">Alucin.<small>/tarea</small></th></tr></thead><tbody>
+<tr><td><span class="num">1</span></td><td>Claude Haiku 5.5 (low)<span class="tag warn">OJO ALUCINACIONES</span></td><td><span class="dot" style="background:#8b5cf6"></span>Anthropic</td><td class="r">1,7</td><td class="r cost">$0.17</td><td class="r"><span class="lc">~$0.83</span></td><td class="r">1,91</td></tr>
+<tr><td><span class="num">2</span></td><td>GPT-6 Luna (max)<span class="tag alt">BAJO COSTE</span></td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">3,3</td><td class="r cost">$0.22</td><td class="r"><span class="lc">~$0.41</span></td><td class="r">0,38</td></tr>
+<tr class="ref"><td><span class="num">3</span></td><td>GPT-6.1 Sol (max)<span class="tag">REFERENCIA</span></td><td><span class="dot" style="background:#2563eb"></span>OpenAI</td><td class="r">6,9</td><td class="r cost">$2.48</td><td class="r"><span class="lc">~$4.44</span></td><td class="r">0,09</td></tr>
+<tr><td><span class="num">4</span></td><td>Grok 4.7 (xhigh)<span class="tag warn">OJO ALUCINACIONES · SOLO COPILOT</span></td><td><span class="dot" style="background:#111827"></span>xAI</td><td class="r">9,4</td><td class="r cost">$9.49</td><td class="r"><span class="lc hi">~$18.98</span></td><td class="r">0,74</td></tr>
+</tbody></table></div>
+<details><summary>Modelos de Copilot medidos en Harvey LAB-AA que no entran</summary><p class="foot">GPT-6 Astra (max) (8,6, $13.67), Claude Fable 5.1 (max) (6,4, $21.73), Kimi K3 (max) (5,3, $6.19), Claude Opus 5.5 (max) (4,2, $17.93), GPT-6 Sol (max) (3,6, $3.33), Claude Haiku 5.5 (xhigh) (2,8, $0.43), Claude Sonnet 5.5 (max) (2,8, $14.03), Claude Haiku 5.5 (high) (1,1, $0.32), Claude Haiku 5.5 (medium) (0,6, $0.24), Claude Haiku 5.5 (max) (0,6, $0.58), Gemini 3.8 Flash (high) (0,0, $1.88)</p></details>
+<h3 style="font-size:16px;margin:16px 0 8px">Inteligencia vs coste (Legal)</h3>
+<svg viewBox="0 0 820 440" role="img" aria-label="Harvey LAB-AA vs coste" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Inter,Arial,sans-serif">
+<line x1="56.0" x2="56.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="56.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.10</text>
+<line x1="130.7" x2="130.7" y1="28" y2="392" stroke="#eef2f7"/>
+<line x1="229.3" x2="229.3" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="229.3" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$0.50</text>
+<line x1="304.0" x2="304.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="304.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$1.00</text>
+<line x1="378.7" x2="378.7" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="378.7" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$2.00</text>
+<line x1="477.3" x2="477.3" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="477.3" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$5.00</text>
+<line x1="552.0" x2="552.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="552.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$10.00</text>
+<line x1="626.7" x2="626.7" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="626.7" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$20.00</text>
+<line x1="725.3" x2="725.3" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="725.3" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$50.00</text>
+<line x1="800.0" x2="800.0" y1="28" y2="392" stroke="#eef2f7"/>
+<text x="800.0" y="408" font-size="10" fill="#94a3b8" text-anchor="middle">$100.00</text>
+<line x1="56" x2="800" y1="392.0" y2="392.0" stroke="#eef2f7"/><text x="48" y="395.0" font-size="10" fill="#94a3b8" text-anchor="end">0</text>
+<line x1="56" x2="800" y1="210.0" y2="210.0" stroke="#eef2f7"/><text x="48" y="213.0" font-size="10" fill="#94a3b8" text-anchor="end">5</text>
+<line x1="56" x2="800" y1="28.0" y2="28.0" stroke="#eef2f7"/><text x="48" y="31.0" font-size="10" fill="#94a3b8" text-anchor="end">10</text>
+<text x="428.0" y="432" font-size="11" fill="#64748b" text-anchor="middle">Coste por tarea (USD, escala log) →</text>
+<text x="14" y="210.0" font-size="11" fill="#64748b" text-anchor="middle" transform="rotate(-90 14 210.0)">Índice ↑</text>
+<path d="M110.7,330.1 L140.2,271.9 L401.6,140.8 L546.3,49.8" fill="none" stroke="#f5b301" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="371.7" cy="392.0" r="4" fill="#14b8a6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Gemini 3.8 Flash (high) · Google · índice 0 · $1.88</title></circle>
+<circle cx="152.4" cy="370.2" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (medium) · Anthropic · índice 1 · $0.24</title></circle>
+<circle cx="245.3" cy="370.2" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (max) · Anthropic · índice 1 · $0.58</title></circle>
+<circle cx="182.7" cy="352.0" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (high) · Anthropic · índice 1 · $0.32</title></circle>
+<circle cx="110.7" cy="330.1" r="6" fill="#8b5cf6" fill-opacity="1" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (low) · Anthropic · índice 2 · $0.17</title></circle>
+<text x="119.7" y="323.1" font-size="9.5" fill="#334155" text-anchor="start">Haiku 5.5 (low)</text>
+<circle cx="212.3" cy="290.1" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Haiku 5.5 (xhigh) · Anthropic · índice 3 · $0.43</title></circle>
+<circle cx="588.5" cy="290.1" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Sonnet 5.5 (max) · Anthropic · índice 3 · $14.03</title></circle>
+<circle cx="140.2" cy="271.9" r="6" fill="#2563eb" fill-opacity="1" stroke="white" stroke-width="1"><title>GPT-6 Luna (max) · OpenAI · índice 3 · $0.22</title></circle>
+<text x="131.2" y="275.9" font-size="9.5" fill="#334155" text-anchor="end">6 Luna (max)</text>
+<circle cx="433.7" cy="261.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Sol (max) · OpenAI · índice 4 · $3.33</title></circle>
+<circle cx="614.9" cy="239.1" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Opus 5.5 (max) · Anthropic · índice 4 · $17.93</title></circle>
+<circle cx="500.4" cy="199.1" r="4" fill="#f59e0b" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Kimi K3 (max) · Moonshot AI · índice 5 · $6.19</title></circle>
+<circle cx="635.6" cy="159.0" r="4" fill="#8b5cf6" fill-opacity="0.35" stroke="white" stroke-width="1"><title>Claude Fable 5.1 (max) · Anthropic · índice 6 · $21.73</title></circle>
+<circle cx="401.6" cy="140.8" r="6" fill="#2563eb" fill-opacity="1" stroke="#1e293b" stroke-width="2"><title>GPT-6.1 Sol (max) · OpenAI · índice 7 · $2.48</title></circle>
+<text x="410.6" y="133.8" font-size="9.5" fill="#334155" text-anchor="start">6.1 Sol (max)</text>
+<circle cx="585.6" cy="79.0" r="4" fill="#2563eb" fill-opacity="0.35" stroke="white" stroke-width="1"><title>GPT-6 Astra (max) · OpenAI · índice 9 · $13.67</title></circle>
+<circle cx="546.3" cy="49.8" r="6" fill="#111827" fill-opacity="1" stroke="white" stroke-width="1"><title>Grok 4.7 (xhigh) · xAI · índice 9 · $9.49</title></circle>
+<text x="537.3" y="53.8" font-size="9.5" fill="#334155" text-anchor="end">Grok 4.7 (xhigh)</text>
+</svg>
+</section>
+<section id="imagen-video"><h2>Imagen y vídeo</h2><p>Para imagen y vídeo, con las cuentas que ya tenemos:</p><ul><li>ChatGPT Business: Images 2.5 (ChatGPT Images) para generar y retocar imágenes.</li><li>Claude Team: Claude Design para prototipos, mockups y presentaciones; Sonnet 5.5 puede escribir el código de una animación y renderizarla a vídeo (p. ej. con HyperFrames en Claude Code).</li><li>GitHub Copilot entiende imágenes (capturas, mockups, PDF) pero no genera imagen ni vídeo.</li></ul><p class="foot">Los datos de la empresa, solo en las cuentas corporativas.</p></section>
+<section id="cambios"><h2>Qué ha cambiado</h2><ul class="cl"><li><span class="cl-date">8 de octubre de 2026 — Edición de octubre</span><ul><li>Nueva referencia general: GPT-6.1 Sol (medium), índice 48 por $0,21/tarea. En septiembre era GPT-5.6 Luna (max), con 38 por $0,18.</li><li>La generación GPT-6 reduce el coste a la mitad: GPT-6 Luna (max) mantiene el 38 por $0,07 (antes $0,18). Salen de la lista todos los GPT-5.6, Gemini 3.8 Flash y Claude Opus 5.</li><li>Entra Claude Haiku 5.5 (xhigh): 41 por $0,12 y muy rápido (más de 180 tok/s), pero por encima de 100K tokens su precio se multiplica por 5. Arriba del todo, Claude Opus 5.5 (54–58) sustituye a Opus 5.</li><li>Programación, misma métrica que en septiembre (Terminal-Bench 4.0 de Artificial Analysis). Nueva referencia: GPT-6.1 Sol (medium), 48,0 por $0,61. En septiembre era GPT-5.6 Luna (high), con 2,5 por $0,11. Sol (medium) casi iguala a Claude Opus 5 (max), el n.º 1 de septiembre (48,0 frente a 49,0), por unas 31 veces menos ($0,61 frente a $19,29).</li><li>Arriba del todo en programación, Claude Sonnet 5.5 (max): 63,6 por $12,65 (antes Opus 5 max: 49,0 por $19,29). Para planificar, GPT-6.1 Sol (xhigh), 54,0 por $1,03. Salen todos los GPT-5.6 y Claude Opus 5. Entra Claude Haiku 5.5 (low/medium/high).</li><li>Contexto largo: ya no compensa saltar a Claude por la tarifa plana. Calculado con los tramos de Copilot, Sol (xhigh) con contexto largo sale por ~$1,77, frente a $5,12 de Opus 5.5 (high) y $12,65 de Sonnet 5.5 (max).</li><li>Corrección de la tabla de septiembre: GPT-5.6 Sol (xhigh) tenía 24,7, no 20,7 (el coste, $3,46, era correcto).</li><li>Nota breve de imagen y vídeo con ChatGPT Images y Claude Design / animación por código (se quitan los rankings de arenas externas).</li><li>Nueva sección Legal con su propio ranking (Harvey LAB-AA v1.1, benchmark legal de Artificial Analysis). Referencia: GPT-6.1 Sol (max), 6,9 por $2,48 y casi sin alucinaciones; para asuntos delicados, GPT-6 Astra (Pro en ChatGPT Business).</li></ul></li><li><span class="cl-date">21 de septiembre de 2026 — Primera edición</span><ul><li>Versión inicial de la guía (referencia general GPT-5.6 Luna (max); programación GPT-5.6 Luna (high)).</li></ul></li></ul></section>
+<section id="fuentes"><h2>Fuentes y metodología</h2><p class="foot"><b>Alcance:</b> Solo modelos disponibles en GitHub Copilot Business/Enterprise (Kimi K3 y Claude Fable requieren que el admin los active). El resto se muestra como referencia y no entra en la frontera.<br><b>Uso general:</b> Artificial Analysis Intelligence Index v4.3.2; coste = Cost per Task.<br><b>Programación:</b> Terminal-Bench 4.0 de Artificial Analysis (mismo criterio que en septiembre); coste = Evaluation Cost per Task.<br><b>Legal:</b> Harvey LAB-AA v1.1 de Artificial Analysis (120 tareas legales privadas; Hallucination-Gated All-Pass Rate); coste = Evaluation Cost per Task; AA solo ha medido algunas variantes (sobre todo esfuerzo max).<br><b>Coste:</b> Coste por tarea a las tarifas por token del modelo (Artificial Analysis; coinciden con las de GitHub Copilot).<br><b>Contexto largo:</b> Calculado con los tramos de Copilot y los tokens reales de cada tarea: GPT-6.x/GPT-5.6 &gt;272K (GPT-5.6 Luna &gt;200K) = x2 input/caché y x1,5 output; Grok &gt;200K = x2; Claude Haiku 5.5 &gt;100K = x5; Claude Sonnet/Opus/Fable, Gemini y Kimi: tarifa plana. Supone la misma tarea con todo el prompt en el tramo largo.<br>Las puntuaciones no son comparables entre versiones de índice; «n/d» = dato no publicado.</p><p class="foot"><b>Datos que faltan (no se inventan):</b></p><ul class="foot"><li><b>GPT-5.3 Codex y GPT-5.4 (todas las variantes)</b> (programación (TB4)): Artificial Analysis no ha publicado Terminal-Bench 4.0 para estas familias (a 8 oct). No pueden entrar en la frontera.</li><li><b>Variantes con menos del 1 % de tareas resueltas (GPT-6 Luna low, GPT-5.6 Luna low/medium, GPT-5 mini, Claude 4.5 Haiku)</b> (programación (TB4)): AA sí las mide, pero no las listamos (en septiembre tampoco): resuelven menos del 1 % de las tareas.</li><li><b>Gemini 3.8 Flash (low)</b> (general): AA publica su índice (33) pero no su coste por tarea ni su velocidad. Con 33 puntos, GPT-6 Luna (high) da lo mismo por $0,03, así que no cambiaría la tabla salvo que costara menos de eso.</li></ul><ul class="foot"><li>Artificial Analysis – LLM Leaderboard (Intelligence Index v4.3.2, Cost per Task, precios por token) — <a href="https://artificialanalysis.ai/leaderboards/models">https://artificialanalysis.ai/leaderboards/models</a> (consultado 2026-10-08)</li><li>Artificial Analysis – Terminal-Bench 4.0 (puntuación y Evaluation Cost per Task) — <a href="https://artificialanalysis.ai/evaluations/terminalbench-4-0">https://artificialanalysis.ai/evaluations/terminalbench-4-0</a> (consultado 2026-10-08)</li><li>Artificial Analysis – Harvey LAB-AA v1.1 (benchmark legal: puntuación, alucinaciones y coste por tarea) — <a href="https://artificialanalysis.ai/evaluations/harvey-lab-aa">https://artificialanalysis.ai/evaluations/harvey-lab-aa</a> (consultado 2026-10-08)</li><li>Artificial Analysis – Metodología Harvey LAB-AA v1.1 — <a href="https://artificialanalysis.ai/methodology/intelligence-benchmarking#harvey-lab-aa">https://artificialanalysis.ai/methodology/intelligence-benchmarking#harvey-lab-aa</a> (consultado 2026-10-08)</li><li>GitHub Docs – Models and pricing for GitHub Copilot (tarifas por token y tramos de contexto largo) — <a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing">https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing</a> (consultado 2026-10-08)</li><li>GitHub Docs – Supported AI models in GitHub Copilot — <a href="https://docs.github.com/en/copilot/reference/ai-models/supported-models">https://docs.github.com/en/copilot/reference/ai-models/supported-models</a> (consultado 2026-10-08)</li><li>GitHub Changelog – Copilot vision is generally available (1 jul 2026) — <a href="https://github.blog/changelog/2026-07-01-copilot-vision-is-generally-available/">https://github.blog/changelog/2026-07-01-copilot-vision-is-generally-available/</a> (consultado 2026-10-08)</li><li>OpenAI – GPT-6.1 Sol model page (precios y regla &gt;272K) — <a href="https://developers.openai.com/api/docs/models/gpt-6.1-sol">https://developers.openai.com/api/docs/models/gpt-6.1-sol</a> (consultado 2026-10-08)</li><li>OpenAI Help – ChatGPT Business models and limits — <a href="https://help.openai.com/en/articles/12003714-chatgpt-business-models-and-limits">https://help.openai.com/en/articles/12003714-chatgpt-business-models-and-limits</a> (consultado 2026-10-08)</li><li>OpenAI – Introducing ChatGPT Images 2.5 (8 sep) — <a href="https://openai.com/index/introducing-chatgpt-images-2-5/">https://openai.com/index/introducing-chatgpt-images-2-5/</a> (consultado 2026-10-08)</li><li>Anthropic – Introducing Claude Sonnet 5.5 (28 sep) — <a href="https://www.anthropic.com/claude-sonnet-5-5">https://www.anthropic.com/claude-sonnet-5-5</a> (consultado 2026-10-08)</li><li>Claude Help – Get started with Claude Design — <a href="https://support.claude.com/en/articles/14604416-get-started-with-claude-design">https://support.claude.com/en/articles/14604416-get-started-with-claude-design</a> (consultado 2026-10-08)</li><li>HyperFrames (HeyGen, Apache-2.0) – HTML → MP4 para agentes — <a href="https://github.com/heygen-com/hyperframes">https://github.com/heygen-com/hyperframes</a> (consultado 2026-10-08)</li></ul>
+<p class="foot">Generado automáticamente con <code>web/build.py</code> desde <code>data/modelos.json</code> el 2026-10-08.</p></section>
+</main></body></html>
