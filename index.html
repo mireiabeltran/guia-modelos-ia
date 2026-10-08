@@ -38,11 +38,22 @@ details{margin-top:10px}summary{cursor:pointer;color:#2563eb}
 .cost{color:#2563eb;font-weight:700}.lc{color:#16a34a;font-weight:600}.lc.hi{color:#dc2626;font-weight:700}
 .flat{color:#64748b;text-decoration:underline;font-weight:600}.flat small{display:block;font-size:9px;color:#94a3b8;text-decoration:none;font-weight:400}
 .harness{color:#94a3b8;font-size:11.5px;margin-left:6px}
+
+.tl{list-style:none;margin:14px 0 4px;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:10px;position:relative}
+.tl:before{content:"";position:absolute;left:0;right:0;top:41px;height:2px;background:linear-gradient(90deg,#bfdbfe,#2563eb)}
+.tl li{position:relative;text-align:center;min-width:0}
+.tl-date{display:block;height:30px;line-height:1.15;font-size:12px;color:#64748b;white-space:nowrap}.tl-date b{display:block;font-size:15px;color:#1e3a8a}
+.tl-pin{display:block;width:14px;height:14px;margin:4px auto 12px;border-radius:50%;background:#fff;border:3px solid #2563eb;position:relative;z-index:1}
+.tl-m{display:block;border:1px solid #e2e8f0;border-radius:10px;background:#fbfdff;padding:7px 8px;margin:0 0 6px;font-size:13px;font-weight:700;color:#1e293b;line-height:1.3}
+.tl-m small{display:block;font-size:11.5px;font-weight:500;color:#64748b;margin-top:2px}
+.tl-m.star{background:#fff7e0;border-color:#f5b301}.tl-key{display:inline-block;width:10px;height:10px;border-radius:3px;background:#fff7e0;border:1px solid #f5b301;margin:0 4px 0 2px;vertical-align:-1px}
+@media(max-width:640px){.tl{grid-auto-flow:row;grid-auto-columns:auto;gap:0;padding-left:26px}.tl:before{left:7px;right:auto;top:6px;bottom:6px;width:2px;height:auto;background:linear-gradient(180deg,#bfdbfe,#2563eb)}
+.tl li{text-align:left;padding-bottom:12px}.tl li:last-child{padding-bottom:0}.tl-pin{position:absolute;left:-26px;top:3px;margin:0}.tl-date{height:auto;margin-bottom:5px}.tl-date b{display:inline;margin-right:4px}}
 </style></head><body>
 <header><div class="wrap"><h1>GuíaModelosIA: qué modelo de IA usar</h1>
 <p>El modelo más barato para cada nivel de inteligencia.</p>
 <span class="upd">Última actualización: 8 de octubre de 2026 · Octubre 2026</span></div></header>
-<nav><div class="wrap"><a href="#resumen">Resumen</a><a href="#general">Uso general</a><a href="#coding">Programación</a><a href="#grafico">Gráfico</a><a href="#legal">Legal</a><a href="#imagen-video">Imagen y vídeo</a></div></nav>
+<nav><div class="wrap"><a href="#resumen">Resumen</a><a href="#general">Uso general</a><a href="#coding">Programación</a><a href="#grafico">Gráfico</a><a href="#legal">Legal</a><a href="#timeline">Línea temporal</a><a href="#imagen-video">Imagen y vídeo</a></div></nav>
 <main class="wrap">
 <section id="resumen"><h2>Resumen</h2><div class="cards">
 <div class="card"><span>Uso general · referencia</span><b>GPT-6.1 Sol (medium)</b><span>Índice 48 · $0.21/tarea</span></div>
@@ -440,5 +451,14 @@ details{margin-top:10px}summary{cursor:pointer;color:#2563eb}
 <text x="537.3" y="53.8" font-size="9.5" fill="#334155" text-anchor="end">Grok 4.7 (xhigh)</text>
 </svg>
 </section>
+<section id="timeline"><h2>Línea temporal de lanzamientos</h2><p class="legend">Fecha de salida de cada modelo de la guía. <span class="tl-key"></span>recomendado en el resumen.</p>
+<ol class="tl">
+<li><span class="tl-date"><b>3 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#2563eb"></span>GPT-6 Astra<small>OpenAI</small></span></li>
+<li><span class="tl-date"><b>21 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#111827"></span>Grok 4.7<small>xAI</small></span></li>
+<li><span class="tl-date"><b>22 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m star"><span class="dot" style="background:#8b5cf6"></span>Claude Opus 5.5<small>Anthropic</small></span><span class="tl-m star"><span class="dot" style="background:#2563eb"></span>GPT-6 Luna<small>OpenAI</small></span></li>
+<li><span class="tl-date"><b>28 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#8b5cf6"></span>Claude Sonnet 5.5<small>Anthropic</small></span></li>
+<li><span class="tl-date"><b>29 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m star"><span class="dot" style="background:#2563eb"></span>GPT-6.1 Sol<small>OpenAI</small></span></li>
+<li><span class="tl-date"><b>7 oct</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#8b5cf6"></span>Claude Haiku 5.5<small>Anthropic</small></span></li>
+</ol></section>
 <section id="imagen-video"><h2>Imagen y vídeo</h2><p>Para imagen y vídeo, con las cuentas que ya tenemos:</p><ul><li>ChatGPT Business: Images 2.5 (ChatGPT Images) para generar y retocar imágenes.</li><li>Claude Team: Claude Design para prototipos, mockups y presentaciones; Sonnet 5.5 puede escribir el código de una animación y renderizarla a vídeo (p. ej. con HyperFrames en Claude Code).</li><li>GitHub Copilot entiende imágenes (capturas, mockups, PDF) pero no genera imagen ni vídeo.</li></ul><p class="foot">Los datos de la empresa, solo en las cuentas corporativas.</p></section>
 </main><script>(function(){var l=[].slice.call(document.querySelectorAll("nav a[href^='#']"));function u(){var y=window.scrollY+90,c=l[0];l.forEach(function(a){var s=document.querySelector(a.getAttribute("href"));if(s&&s.offsetTop<=y)c=a;});if(window.innerHeight+window.scrollY>=document.body.scrollHeight-2)c=l[l.length-1];l.forEach(function(a){var on=a===c;a.classList.toggle("active",on);if(on)a.setAttribute("aria-current","true");else a.removeAttribute("aria-current");});}window.addEventListener("scroll",u,{passive:true});window.addEventListener("hashchange",u);u();})();</script></body></html>
