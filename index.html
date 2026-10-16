@@ -91,7 +91,7 @@ html[data-theme=dark] .dot[style*="#111827"],html[data-theme=dark] .lg i[style*=
 .tl-pin{display:block;width:14px;height:14px;margin:2px auto 9px;border-radius:50%;background:var(--ink);border:4px solid var(--bg);position:relative;z-index:1;box-shadow:0 0 0 1.5px var(--ink)}
 .tl-m{display:block;border-radius:14px;background:var(--soft);padding:7px 8px;margin:0 0 6px;font-size:13px;font-weight:750;letter-spacing:-.01em;color:var(--fg);line-height:1.3;transition:transform .15s}.tl-m:hover{transform:translateY(-2px)}
 .tl-m small{display:block;font-size:11.5px;font-weight:600;color:var(--fg2);margin-top:1px;letter-spacing:0}
-.tl-m.star{background:var(--but)}.tl-key{display:inline-block;width:12px;height:12px;border-radius:4px;background:var(--but);margin:0 5px 0 2px;vertical-align:-1px;box-shadow:inset 0 0 0 1px rgba(12,12,15,.12)}
+.tl-m.star{background:var(--but)}.tl-key{display:inline-block;width:28px;height:12px;border-radius:4px;background:linear-gradient(90deg,var(--lav) 0 25%,var(--but) 25% 50%,var(--min) 50% 75%,var(--pea) 75% 100%);margin:0 5px 0 2px;vertical-align:-1px;box-shadow:inset 0 0 0 1px rgba(12,12,15,.12)}
 @media(max-width:640px){.tl{grid-auto-flow:row;grid-auto-columns:auto;gap:0;padding-left:28px}.tl:before{left:7px;right:auto;top:6px;bottom:6px;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--fg) 0 7px,transparent 7px 13px)}
 .tl li{text-align:left;padding-bottom:10px}.tl li:last-child{padding-bottom:0}.tl-pin{position:absolute;left:-28px;top:2px;margin:0}.tl-date{height:auto;margin-bottom:6px}.tl-date b{display:inline;margin-right:5px}.tl-m{padding:7px 12px}}
 
@@ -126,9 +126,9 @@ html[data-theme=dark] .ch-tip{box-shadow:0 14px 36px rgba(0,0,0,.5)}
 <section id="timeline"><h2>Línea temporal de lanzamientos</h2><p class="legend">Fecha de salida de cada modelo de la guía. <span class="tl-key"></span>recomendado en el resumen.</p>
 <ol class="tl">
 <li><span class="tl-date"><b>3 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#2563eb"></span>GPT-6 Astra<small>OpenAI</small></span></li>
-<li><span class="tl-date"><b>22 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m star"><span class="dot" style="background:#8b5cf6"></span>Claude Opus 5.5<small>Anthropic</small></span><span class="tl-m star"><span class="dot" style="background:#2563eb"></span>GPT-6 Luna<small>OpenAI</small></span></li>
+<li><span class="tl-date"><b>22 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m star" style="background:var(--pea)"><span class="dot" style="background:#8b5cf6"></span>Claude Opus 5.5<small>Anthropic</small></span><span class="tl-m star" style="background:var(--min)"><span class="dot" style="background:#2563eb"></span>GPT-6 Luna<small>OpenAI</small></span></li>
 <li><span class="tl-date"><b>28 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#8b5cf6"></span>Claude Sonnet 5.5<small>Anthropic</small></span></li>
-<li><span class="tl-date"><b>29 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m star"><span class="dot" style="background:#2563eb"></span>GPT-6.1 Sol<small>OpenAI</small></span></li>
+<li><span class="tl-date"><b>29 sep</b>2026</span><span class="tl-pin"></span><span class="tl-m star" style="background:linear-gradient(135deg,var(--lav) 0% 50%,var(--but) 50% 100%)"><span class="dot" style="background:#2563eb"></span>GPT-6.1 Sol<small>OpenAI</small></span></li>
 <li><span class="tl-date"><b>7 oct</b>2026</span><span class="tl-pin"></span><span class="tl-m"><span class="dot" style="background:#8b5cf6"></span>Claude Haiku 5.5<small>Anthropic</small></span></li>
 </ol></section>
 <section id="resumen"><h2>Resumen</h2><div class="cards">
